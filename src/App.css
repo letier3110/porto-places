@@ -1,0 +1,165 @@
+
+.AppContainer {
+  --app-padding-vertical: 12px;
+  --app-padding-horizontal: 20px;
+  width: calc(100vw - var(--app-padding-horizontal) * 2);
+  min-height: calc(100vh - var(--app-padding-vertical) * 2);
+  padding: var(--app-padding-vertical) var(--app-padding-horizontal);
+}
+
+.relative {
+  position: relative;
+}
+
+.flex-gap {
+  gap: 12px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.filters {
+  text-transform: uppercase;
+}
+
+.Cards {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.Card {
+  /* border-color: #ffffff; */
+  background-color: #646cff;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px 12px;
+  width: 100%;
+  position: relative;
+
+  min-width: 250px;
+  min-height: 250px;
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  max-height: 250px;
+
+  overflow: hidden;
+}
+
+.CardIndex {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 1;
+  /* text-decoration: underline; */
+}
+
+.CardName {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: max-content;
+  font-size: 1.6rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.CardBg {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+.CardBgCover {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.CardOverlay {
+  opacity: 0;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  
+}
+
+.CardOverlay:hover {
+  opacity: 1;
+}
+
+.ChipsFather {
+  position: relative;
+}
+
+.ChipsModal {
+  position: absolute;
+  top: 75%;
+  left: 0;
+  z-index: 3;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  
+  gap: 12px;
+}
+
+.inputWrapper {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+@media (prefers-color-scheme: light) {
+  .ChipsModal {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #ffffff;
+  }
+}
