@@ -8,7 +8,6 @@ import react from '@vitejs/plugin-react-swc'
 // })
 
 export default defineConfig(({ command, mode }) => {
-  // @ts-expect-error loadEnv is nodejs only
   const env = loadEnv(mode, process.cwd(), '');
   const config: UserConfigExport = {
     build: {
@@ -38,7 +37,7 @@ export default defineConfig(({ command, mode }) => {
   return config;
 });
 
-function getHttpsConfig(env: Record<string, string>): TlsOptions | undefined {
+function getHttpsConfig(env: Record<string, string>) {
   const crtPath = env.SSL_CRT_FILE;
   const keyPath = env.SSL_KEY_FILE;
   if (!crtPath || !keyPath) return undefined;
