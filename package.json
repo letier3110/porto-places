@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://letier3110.github.io/porto-places",
+  "homepage": "https://letier3110.github.io/porto-places/",
   "scripts": {
     "dev": "vite serve",
     "build": "tsc -b && vite build",
