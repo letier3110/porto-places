@@ -72,8 +72,8 @@ const poiData = {
 const Map: FC = () => {
   const mapContainer = useRef<HTMLDivElement>(null)
   const map = useRef<mapboxgl.Map | null>(null)
-  const [lng, ] = useState(-8.6291)
   const [lat, ] = useState(41.1579)
+  const [lng, ] = useState(-8.6291)
   const [zoom, ] = useState(13)
   useEffect(() => {
     if (map.current) return // initialize map only once
@@ -115,13 +115,14 @@ const Map: FC = () => {
         map.current.addLayer({
           id: 'poi-layer',
           source: 'poi-source',
-          type: 'fill-extrusion',
-          paint: {
-            'fill-extrusion-color': ['get', 'color'],
-            'fill-extrusion-height': ['get', 'height'],
-            'fill-extrusion-base': 0,
-            'fill-extrusion-opacity': 0.8
-          }
+          type: 'circle',
+          // type: 'fill-extrusion',
+          // paint: {
+          //   'fill-extrusion-color': ['get', 'color'],
+          //   'fill-extrusion-height': ['get', 'height'],
+          //   'fill-extrusion-base': 0,
+          //   'fill-extrusion-opacity': 0.8
+          // }
         })
 
         let hoveredStateId: number | null = null
