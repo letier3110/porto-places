@@ -35,38 +35,28 @@ const Card: FC<CardProps> = ({ cardData, index }) => {
             <div className='CardOverlayContentRatingStars'>
               <div
                 className='CardOverlayContentRatingStarsFilled'
-                style={{ width: `${(cardData.medianRating / 5) * 100}%` }}
+                style={{ width: `${(cardData.medianRating / 10) * 100}%` }}
               />
 
               <div className='CardOverlayContentRatingStarsEmpty' />
-
-              <div className='CardOverlayContentRatingStarsTotal'>
-                {cardData.numberOfRatings}
-
-                <span>ratings</span>
-
-                <span>•</span>
-
-                {cardData.medianRating}
-
-                <span>stars</span>
-
-                <span>•</span>
-
-                {cardData.hours.map((hour, index) => (
-                  <span key={index}>
-                    {hour.open} - {hour.close}
-                  </span>
-                ))}
-
-                <span>•</span>
-
-                <a href={cardData.gmaps} target='_blank' rel='noreferrer'>
-                  Directions
-                </a>
-              </div>
             </div>
           </div>
+          <div className='CardOverlayContentInfo'>
+            {cardData.numberOfRatings}
+
+            <span>ratings</span>
+
+            <span>•</span>
+
+            {cardData.medianRating}
+
+            <span>stars</span>
+
+
+          </div>
+          <a href={cardData.gmaps} className='directions' target='_blank' rel='noreferrer'>
+            Directions
+          </a>
         </div>
       </div>
     </div>
