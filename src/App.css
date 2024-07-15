@@ -39,6 +39,12 @@
   text-transform: uppercase;
 }
 
+.CardsWithMap {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+}
+
 .Cards {
   display: grid;
   gap: 12px;

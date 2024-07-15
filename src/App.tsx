@@ -6,12 +6,10 @@ import Card from './Card'
 import CardsData from '../public/data.json'
 import tagGroups from '../public/filters.json'
 import { DataEntry } from './interfaces'
+import Map from './Map'
 
 const data = CardsData as { data: Array<DataEntry> }
 const cardsData = data.data
-
-// const data = CardsData as { example: DataEntry }
-// const cardsData = data.example as DataEntry
 
 interface IFilter {
   search: string
@@ -19,10 +17,9 @@ interface IFilter {
   sort: string
 }
 
-// const tags = ['Japanese', 'Korean', 'Dine-in']
-
 const App: FC = () => {
   const [openFilters, setOpenFilters] = useState(false)
+  const [mapMode, setMapMode] = useState(false)
   const [showChips, setShowChips] = useState(false)
   const [searchInFilters, setSearchInFilters] = useState('')
   const [filters, setFilters] = useState<IFilter>({
@@ -47,6 +44,10 @@ const App: FC = () => {
 
   const handleToggleFilters = () => {
     setOpenFilters(!openFilters)
+  }
+
+  const handleToggleMapMode = () => {
+    setMapMode(!mapMode)
   }
 
   const enableChips = () => {
@@ -84,7 +85,7 @@ const App: FC = () => {
   const filteredTagItems = unlimitedFilters.filter((group) => group.values.length > 0)
 
   const handleSubmitSearchInFilters = () => {
-    if(filteredTagItems.length > 0 && filteredTagItems[0].values.length > 0) {
+    if (filteredTagItems.length > 0 && filteredTagItems[0].values.length > 0) {
       setFilters({
         tags: filters.tags.concat(filteredTagItems[0].values[0]),
         search: '',
@@ -145,7 +146,7 @@ const App: FC = () => {
           </div>
         </div>
         <div className='flex flex-gap'>
-          <button>Grid View</button>
+          <button onClick={handleToggleMapMode}>{mapMode ? 'Map View' : 'Grid View'}</button>
           <button className='flex flex-gap'>
             <div>Sort by</div>
             <div>^</div>
@@ -181,11 +182,19 @@ const App: FC = () => {
           </div>
         )}
       </div>
-      <div className='Cards'>
+      {!mapMode && (<div className='Cards'>
         {filteredContent.map((cardData, index) => (
           <Card cardData={cardData} index={index + 1} key={index} />
         ))}
-      </div>
+      </div>)}
+      {mapMode && (<div className='CardsWithMap'>
+        <div>
+          {filteredContent.map((cardData, index) => (
+            <Card cardData={cardData} index={index + 1} key={index} />
+          ))}
+        </div>
+        <Map />
+      </div>)}
     </div>
   )
 }
