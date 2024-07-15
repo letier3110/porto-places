@@ -1,0 +1,75 @@
+[
+  {
+    "groupName": "Time of day",
+    "values": ["Breakfast", "Lunch", "Dinner", "Late night"]
+  },
+  {
+    "groupName": "Cuisine nationality",
+    "values": [
+      "Ukranian",
+      "Italian",
+      "Israeli",
+      "Portuguese",
+      "Brazillian",
+      "Japanese",
+      "French",
+      "Thai",
+      "American",
+      "Greek",
+      "Vietnamese",
+      "Russian",
+      "Belorussian"
+    ]
+  },
+  {
+    "groupName": "Specific dish type",
+    "values": [
+      "Pizza",
+      "Sushi",
+      "Burgers",
+      "Ramen",
+      "Tacos",
+      "Pasta",
+      "Franchesinha",
+      "Pancakes",
+      "Steak",
+      "Curry",
+      "Salad",
+      "Sandwiches",
+      "Soup",
+      "Dessert",
+      "Coffee",
+      "Tea",
+      "Cocktails",
+      "Beer",
+      "Wine",
+      "Juice",
+      "Smoothies",
+      "Ice cream",
+      "Bread",
+      "Cheese",
+      "Fruit",
+      "Vegetables",
+      "Fish",
+      "Meat",
+      "Vegan",
+      "Vegetarian",
+      "Gluten-free",
+      "Lactose-free",
+      "Halal",
+      "Kosher"
+    ]
+  },
+  {
+    "groupName": "Seating",
+    "values": ["Indoor", "Outdoor", "Rooftop", "Bar", "Counter", "Table", "Food court", "Shared", "Ocean"]
+  },
+  {
+    "groupName": "Establishment type",
+    "values": ["Restaurant", "Cafe", "Bar", "Fast food", "Food truck", "Bistro", "Diner", "Pub"]
+  },
+  {
+    "groupName": "Dining options",
+    "values": ["Dine-in", "Takeaway", "Delivery"]
+  }
+]

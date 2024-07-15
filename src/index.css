@@ -109,13 +109,25 @@ button:focus-visible {
   color: white;
 }
 
+.ChipDelete {
+  background-color: transparent;
+  border: 1px solid #ff2222;
+  color: #ff2222;
+}
+
+.ChipDelete:hover {
+  background-color: #ff2222;
+  color: white;
+  border-color: transparent;
+}
+
 input {
   border-radius: 8px;
   border: 1px solid #dddddd;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  color: #ffffff;
+  color: #242424;
   font-family: inherit;
   cursor: pointer;
   transition: color background-color border-color 0.25s;

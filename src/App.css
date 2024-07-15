@@ -147,14 +147,51 @@
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+  display: grid;
+  /* three columns equal */
+  grid-template-columns: repeat(3, 1fr);
+  /* gray border between */
+  grid-gap: 20px;
   
+  min-width: 100px;
+  max-width: 450px;
+}
+
+.filterGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
   gap: 12px;
+  color: #222222;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.filterGroup::before, .filterGroup::after {
+  content: '';
+  position: absolute;
+  z-index: 7;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.filterGroup::before {
+  inline-size: var(--line-thickness, 1px);
+  block-size: 100%;
+  inset-inline-start: calc(var(--line-offset, 12px) * -1);
+  inset-block-start: 0;
+}
+
+.filterGroup::after {
+  inline-size: 100%;
+  block-size: var(--line-thickness, 1px);
+  inset-inline-start: 0;
+  inset-block-start: calc(var(--line-offset, 12px) * -1);
 }
 
 .inputWrapper {
-  position: absolute;
-  left: 5px;
-  top: 5px;
+  display: flex;
 }
 
 @media (prefers-color-scheme: light) {
