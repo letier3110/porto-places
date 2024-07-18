@@ -51,6 +51,12 @@
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
+.poi-popup button {
+  background-color: #f9f9f9;
+  border-color: #646cff;
+  color: #646cff;
+}
+
 .Card {
   /* border-color: #ffffff; */
   background-color: #646cff;

@@ -80,7 +80,8 @@ const Map: FC = () => {
     // create map once, then "fly" to new locations
     map.current = new mapboxgl.Map({
       container: mapContainer.current as never, // container ID
-      style: 'mapbox://styles/mapbox/light-v10',
+      // traffic v12
+      style: 'mapbox://styles/mapbox/streets-v12', // style URL
       // center: [-8.6291, 41.1579], // Porto coordinates
       // zoom: 13,
       center: [lng, lat],
@@ -98,24 +99,30 @@ const Map: FC = () => {
           data: poiData
         })
 
-        map.current.addLayer({
-          id: '3d-buildings',
-          source: 'composite',
-          'source-layer': 'building',
-          filter: ['==', 'extrude', 'true'],
-          type: 'fill-extrusion',
-          minzoom: 15,
-          paint: {
-            'fill-extrusion-color': '#aaa',
-            'fill-extrusion-height': ['interpolate', ['linear'], ['zoom'], 15, 0, 15.05, ['get', 'height']],
-            'fill-extrusion-base': ['interpolate', ['linear'], ['zoom'], 15, 0, 15.05, ['get', 'min_height']],
-            'fill-extrusion-opacity': 0.6
-          }
-        })
+        // map.current.addLayer({
+        //   id: '3d-buildings',
+        //   source: 'composite',
+        //   'source-layer': 'building',
+        //   filter: ['==', 'extrude', 'true'],
+        //   type: 'fill-extrusion',
+        //   minzoom: 15,
+        //   paint: {
+        //     'fill-extrusion-color': '#aaa',
+        //     'fill-extrusion-height': ['interpolate', ['linear'], ['zoom'], 15, 0, 15.05, ['get', 'height']],
+        //     'fill-extrusion-base': ['interpolate', ['linear'], ['zoom'], 15, 0, 15.05, ['get', 'min_height']],
+        //     'fill-extrusion-opacity': 0.6
+        //   }
+        // })
         map.current.addLayer({
           id: 'poi-layer',
           source: 'poi-source',
           type: 'circle',
+          paint: {
+            'circle-radius': 6,
+            'circle-color': ['get', 'color']
+          }
+
+
           // type: 'fill-extrusion',
           // paint: {
           //   'fill-extrusion-color': ['get', 'color'],
@@ -125,35 +132,35 @@ const Map: FC = () => {
           // }
         })
 
-        let hoveredStateId: number | null = null
+        // const hoveredStateId: number | null = null
 
-        map.current.on('mousemove', '3d-buildings', (e) => {
-          if (!map.current) return
-          if (e.features.length > 0) {
-            if (hoveredStateId !== null) {
-              map.current.setFeatureState(
-                { source: 'composite', sourceLayer: 'building', id: hoveredStateId },
-                { hover: false }
-              )
-            }
-            hoveredStateId = e.features[0].id
-            map.current.setFeatureState(
-              { source: 'composite', sourceLayer: 'building', id: hoveredStateId || 0 },
-              { hover: true }
-            )
-          }
-        })
+        // map.current.on('mousemove', 'poi-layer', (e) => {
+        //   if (!map.current) return
+        //   if (e.features.length > 0) {
+        //     if (hoveredStateId !== null) {
+        //       map.current.setFeatureState(
+        //         { source: 'poi-source', id: hoveredStateId },
+        //         { hover: false }
+        //       )
+        //     }
+        //     hoveredStateId = e.features[0].id
+        //     map.current.setFeatureState(
+        //       { source: 'poi-source', id: hoveredStateId || 0 },
+        //       { hover: true }
+        //     )
+        //   }
+        // })
 
-        map.current.on('mouseleave', '3d-buildings', () => {
-          if (!map.current) return
-          if (hoveredStateId !== null) {
-            map.current.setFeatureState(
-              { source: 'composite', sourceLayer: 'building', id: hoveredStateId },
-              { hover: false }
-            )
-          }
-          hoveredStateId = null
-        })
+        // map.current.on('mouseleave', 'poi-layer', () => {
+        //   if (!map.current) return
+        //   if (hoveredStateId !== null) {
+        //     map.current.setFeatureState(
+        //       { source: 'poi-source', id: hoveredStateId },
+        //       { hover: false }
+        //     )
+        //   }
+        //   hoveredStateId = null
+        // })
 
         // Add click event for POIs
         map.current.on('click', 'poi-layer', (e) => {
@@ -161,7 +168,9 @@ const Map: FC = () => {
           const coordinates = e.features[0].geometry.coordinates.slice()
           const name = e.features[0].properties.name
 
-          new mapboxgl.Popup().setLngLat(coordinates).setHTML(`<h3>${name}</h3>`).addTo(map.current)
+          new mapboxgl.Popup({
+            className: 'poi-popup'
+          }).setLngLat(coordinates).setHTML(`<h3>${name}</h3>`).addTo(map.current)
         })
 
         // Change cursor on POI hover
