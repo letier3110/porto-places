@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Chapa Quente",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    },
+    "address": "",
+    "hours": [],
+    "gmaps": "https://maps.app.goo.gl/rHyauwBpQdDjCzHNA",
+    "menu": [],
+    "mediaUrl": [],
+    "reviews": [],
+    "tags": ["Brazilian", "Burger"],
+    "medianRating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Baobab - craft beer bar",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    },
+    "address": "",
+    "hours": [],
+    "gmaps": "https://maps.app.goo.gl/VgA14LGjcsBEmNqb9",
+    "menu": [],
+    "mediaUrl": [],
+    "reviews": [],
+    "tags": ["Beer", "Craft beer", "Bar"],
+    "medianRating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Rice - Vietnamita Cozinha",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    },
+    "address": "",
+    "hours": [],
+    "gmaps": "https://maps.app.goo.gl/azc4DsNoUnTK9GmP6",
+    "menu": [],
+    "mediaUrl": [],
+    "reviews": [],
+    "tags": ["Vietmamese", "Cafe"],
+    "medianRating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "FÉ Wine & Club",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    },
+    "address": "",
+    "hours": [],
+    "gmaps": "https://maps.app.goo.gl/cZtfCT4W2swdMWcMA",
+    "menu": [],
+    "mediaUrl": [],
+    "reviews": [],
+    "tags": ["Cocktails", "Wine"],
+    "medianRating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Coqueluche",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    },
+    "address": "",
+    "hours": [],
+    "gmaps": "https://maps.app.goo.gl/2yoak6c3KQHn2z516",
+    "menu": [],
+    "mediaUrl": [],
+    "reviews": [],
+    "tags": ["Beer", "Local", "Sports bar", "Bar"],
+    "medianRating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Bali-Hai Polynesian Bar",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    },
+    "address": "",
+    "hours": [],
+    "gmaps": "https://maps.app.goo.gl/xyaRPvbu5PFaRTBu8",
+    "menu": [],
+    "mediaUrl": [],
+    "reviews": [],
+    "tags": ["Cocktails", "Bar"],
+    "medianRating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Iguarias de HANÓI",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    },
+    "address": "",
+    "hours": [],
+    "gmaps": "https://maps.app.goo.gl/4WA9Sx21AzYYrnNT7",
+    "menu": [],
+    "mediaUrl": [],
+    "reviews": [],
+    "tags": ["Vietmamese", "Cafe"],
+    "medianRating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Pub Bonaparte Foz",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    },
+    "address": "",
+    "hours": [],
+    "gmaps": "https://maps.app.goo.gl/t8y5j5g6DN3pDfQK7",
+    "menu": [],
+    "mediaUrl": [],
+    "reviews": [],
+    "tags": ["Beer", "Pub", "Sports bar"],
+    "medianRating": 0,
+    "numberOfRatings": 0
+  },
+  {
+    "name": "Cervejaria Nortada",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    },
+    "address": "",
+    "hours": [],
+    "gmaps": "https://maps.app.goo.gl/UbjogX9gNPktSLZR8",
+    "menu": [],
+    "mediaUrl": [],
+    "reviews": [],
+    "tags": ["Beer", "Craft beer", "Bar"],
+    "medianRating": 0,
+    "numberOfRatings": 0
+  }
+]

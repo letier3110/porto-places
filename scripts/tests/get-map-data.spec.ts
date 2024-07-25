@@ -1,0 +1,31 @@
+import { test } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://www.bing.com/maps?cp=41.160563%7E-8.633194&lvl=11.0');
+  await page.getByRole('button', { name: 'Accept' }).click();
+  await page.getByPlaceholder('Find places and landmarks on').click();
+  await page.getByPlaceholder('Find places and landmarks on').fill('Chapa Quente');
+  await page.getByPlaceholder('Find places and landmarks on').press('Enter');
+  await page.getByText('Praça República 206 Porto').click();
+  await page.getByLabel('Phone', { exact: true }).click();
+  await page.getByLabel('Hours').click();
+  await page.getByRole('button', { name: '-star 67%' }).click();
+  await page.locator('#accordion_7_DEE24E div').filter({ hasText: '5-star67%4-star33%3-star0%2-star0%1-star0%Recent' }).nth(1).click();
+  await page.locator('a').filter({ hasText: 'media-cdn.tripadvisor.com' }).click();
+  await page.frameLocator('#OverlayIFrame').getByLabel('Provided by Tripadvisor').click();
+  await page.frameLocator('#OverlayIFrame').getByLabel('Close image').click();
+  await page.getByRole('button', { name: 'Save to calendar' }).click();
+  await page.getByRole('button', { name: 'Thursday, July 25, 2024 1:00' }).click();
+  await page.getByRole('button', { name: '26' }).click();
+  await page.getByRole('button', { name: 'Tripadvisor 5.0/5 · 4 reviews' }).click();
+  await page.getByRole('button', { name: 'Ubereats 4.8/5 · 1,500 reviews' }).click();
+  await page.getByRole('button', { name: 'Friday, July 26, 2024 1:00 AM' }).click();
+  await page.getByText('Open · Closes 00:').click();
+  await page.getByText('Wednesday').click();
+  await page.locator('#IconItem_4').click();
+  await page.getByText('Tripadvisor (4) · Burger,').click();
+  await page.locator('#taskBarContainer').getByRole('button', { name: 'More' }).click();
+  await page.getByText('Share').nth(1).click();
+  await page.getByRole('button', { name: 'Copy' }).click();
+  await page.getByLabel('Copy URL').click();
+});
