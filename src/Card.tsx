@@ -21,7 +21,7 @@ const Card: FC<CardProps> = ({ cardData, index }) => {
       {cardData.mediaUrl && cardData.mediaUrl.length > 0 && <div className='CardBgCover' />}
       <div className='CardIndex'>{index}</div>
       <div className='CardName'>{cardData.name}</div>
-      <div>456</div>
+      {/* <div>456</div> */}
       <div className='CardOverlay'>
         <div className='CardOverlayContent'>
           <div className='CardOverlayContentTags flex flex-gap flex-wrap'>

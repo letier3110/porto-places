@@ -1,0 +1,53 @@
+{
+  "backend": [
+    {
+      "id":"2",
+      "name":"Setup Discord-DM Bot",
+      "description": "Denojs server, which will accept user text messages from the form and will send them as direct messages to admin user through Discord"
+    }
+  ],
+  "infrastructure": [
+    {
+      "id":"2",
+      "name":"Deploy Deno Server"
+    },
+    {
+      "name":"Setup GitHub action to automatically scrape data from maps and push them to repo"
+    }
+  ],
+  "frontend": [
+    {
+      "id":"2",
+      "name":"Create a form to accept user text messages",
+      "description": "Copy base message submit form from LLM-chat"
+    },
+    {
+      "name":"Redesign tags popup from grid to column with 1.row-name,2.row-tags"
+    },
+    {
+      "name":"Redesign filters from string to object. Id as tag name, value as tag+emoji"
+    },
+    {
+      "name":"Check mobile responsiveness of the website (main usage)"
+    },
+    {
+      "id":"1",
+      "name":"Add mode-switcher to new types of venues"
+    },
+    {
+      "optional":true,
+      "name":"Visualisation of roadmap"
+    }
+  ],
+  "dataOps": [
+    {
+      "id":"prompt.sample",
+      "name":"Provide util to convert free text to venue object",
+      "description":"Use LLM with propt to convert. Better to configure npm-scripts or github action"
+    },
+    {
+      "id":"1",
+      "name":"Add new types of venues, not only restaurants"
+    }
+  ]
+}
