@@ -1,4 +1,4 @@
-{  
+{
   "model": {
     "name": "string",
     "coordinates": {
@@ -6,10 +6,12 @@
       "longitude": "number"
     },
     "address": "string",
-    "hours": [{
-      "open": "string",
-      "close": "string"
-    }],
+    "hours": [
+      {
+        "open": "string",
+        "close": "string"
+      }
+    ],
     "gmaps": "string",
     "menu": [
       {
@@ -29,7 +31,6 @@
     "medianRating": "number",
     "numberOfRatings": "number"
   },
-
 
   "example": {
     "name": "Kuma Bento & Ramen",
@@ -67,7 +68,6 @@
     "medianRating": 9.6,
     "numberOfRatings": 182
   },
-
 
   "data": [
     {
@@ -209,6 +209,353 @@
       "tags": ["Portuguese", "Burger", "Porto", "Cheap", "Takeaway", "Delivery"],
       "medianRating": 9.4,
       "numberOfRatings": 1971
+    },
+    {
+      "name": "Chapa Quente",
+      "coordinates": {
+        "latitude": 41.160563,
+        "longitude": -8.633194
+      },
+      "address": "Praça República 206 Porto 4050-498",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/rHyauwBpQdDjCzHNA",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Brazilian", "Burger"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Baobab - Craft Beer Bar",
+      "coordinates": {
+        "latitude": 41.150369,
+        "longitude": -8.612144
+      },
+      "address": "Rua Do Almada 377 Porto 4000303",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/VgA14LGjcsBEmNqb9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Beer", "Craft beer", "Bar"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Rice - Vietnamita Cozinha",
+      "coordinates": {
+        "latitude": 41.145918,
+        "longitude": -8.606436
+      },
+      "address": "R. de Santo Ildefonso 16, 4000-385 Porto",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/azc4DsNoUnTK9GmP6",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Vietmamese", "Cafe"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "FÉ Wine & Club",
+      "coordinates": {
+        "latitude": 41.147864,
+        "longitude": -8.612251
+      },
+      "address": "Praça D. Filipa De Lencastre 1 Porto 4050-259",
+      "hours": [
+        {
+          "open": "Friday16:00"
+        },
+        {
+          "open": "- 04:00"
+        },
+        {
+          "open": "Saturday16:00"
+        },
+        {
+          "open": "- 00:00"
+        },
+        {
+          "open": "SundayClosedMonday16:00"
+        },
+        {
+          "open": "- 00:00"
+        },
+        {
+          "open": "Tuesday16:00"
+        },
+        {
+          "open": "- 02:00"
+        },
+        {
+          "open": "Wednesday16:00"
+        },
+        {
+          "open": "- 02:00"
+        },
+        {
+          "open": "Thursday16:00"
+        },
+        {
+          "open": "- 04:00"
+        }
+      ],
+      "gmaps": "https://maps.app.goo.gl/cZtfCT4W2swdMWcMA",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Cocktails", "Wine"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Coqueluche",
+      "coordinates": {
+        "latitude": 41.15612,
+        "longitude": -8.618646
+      },
+      "address": "Rua da boavista 453 Vila Nova de Gaia 4050-108",
+      "hours": [
+        {
+          "open": "Friday12:30"
+        },
+        {
+          "open": "- 02:00"
+        },
+        {
+          "open": "Saturday15:00"
+        },
+        {
+          "open": "- 02:00"
+        },
+        {
+          "open": "Sunday15:00"
+        },
+        {
+          "open": "- 02:00"
+        },
+        {
+          "open": "Monday12:30"
+        },
+        {
+          "open": "- 02:00"
+        },
+        {
+          "open": "Tuesday12:30"
+        },
+        {
+          "open": "- 02:00"
+        },
+        {
+          "open": "Wednesday12:30"
+        },
+        {
+          "open": "- 02:00"
+        },
+        {
+          "open": "Thursday12:30"
+        },
+        {
+          "open": "- 02:00"
+        }
+      ],
+      "gmaps": "https://maps.app.goo.gl/2yoak6c3KQHn2z516",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Beer", "Local", "Sports bar", "Bar"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Bali-Hai Polynesian Bar",
+      "coordinates": {
+        "latitude": 41.15625,
+        "longitude": -8.61798
+      },
+      "address": "Rua das Águas Férreas, 9 R/C Porto 4050-021",
+      "hours": [
+        {
+          "open": "Friday21:00"
+        },
+        {
+          "open": "- 02:00"
+        },
+        {
+          "open": "Saturday21:00"
+        },
+        {
+          "open": "- 02:00"
+        },
+        {
+          "open": "SundayClosedMonday21:00"
+        },
+        {
+          "open": "- 02:00"
+        },
+        {
+          "open": "Tuesday21:00"
+        },
+        {
+          "open": "- 02:00"
+        },
+        {
+          "open": "Wednesday21:00"
+        },
+        {
+          "open": "- 02:00"
+        },
+        {
+          "open": "Thursday21:00"
+        },
+        {
+          "open": "- 02:00"
+        }
+      ],
+      "gmaps": "https://maps.app.goo.gl/xyaRPvbu5PFaRTBu8",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Cocktails", "Bar"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Iguarias de HANÓI",
+      "coordinates": {
+        "latitude": 41.152824,
+        "longitude": -8.6218
+      },
+      "address": "Rua Da Torrinha 232 Porto I-4050-610",
+      "hours": [
+        {
+          "open": "Friday18:30"
+        },
+        {
+          "open": "- 23:00"
+        },
+        {
+          "open": "Saturday18:30"
+        },
+        {
+          "open": "- 23:00"
+        },
+        {
+          "open": "Sunday18:30"
+        },
+        {
+          "open": "- 23:00"
+        },
+        {
+          "open": "Monday18:30"
+        },
+        {
+          "open": "- 22:30"
+        },
+        {
+          "open": "Tuesday18:30"
+        },
+        {
+          "open": "- 22:30"
+        },
+        {
+          "open": "Wednesday18:30"
+        },
+        {
+          "open": "- 22:30"
+        },
+        {
+          "open": "Thursday18:30"
+        },
+        {
+          "open": "- 22:45"
+        }
+      ],
+      "gmaps": "https://maps.app.goo.gl/4WA9Sx21AzYYrnNT7",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Vietmamese", "Cafe"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Pub Bonaparte Foz",
+      "coordinates": {
+        "latitude": 41.153778,
+        "longitude": -8.67892
+      },
+      "address": "Av. Do Brasil 130 Porto 4150-151",
+      "hours": [
+        {
+          "open": "Friday17:00"
+        },
+        {
+          "open": "- 03:00"
+        },
+        {
+          "open": "Saturday14:30"
+        },
+        {
+          "open": "- 03:00"
+        },
+        {
+          "open": "Sunday14:30"
+        },
+        {
+          "open": "- 03:00"
+        },
+        {
+          "open": "Monday17:00"
+        },
+        {
+          "open": "- 02:00"
+        },
+        {
+          "open": "Tuesday17:00"
+        },
+        {
+          "open": "- 02:00"
+        },
+        {
+          "open": "Wednesday17:00"
+        },
+        {
+          "open": "- 02:00"
+        },
+        {
+          "open": "Thursday17:00"
+        },
+        {
+          "open": "- 02:00"
+        }
+      ],
+      "gmaps": "https://maps.app.goo.gl/t8y5j5g6DN3pDfQK7",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Beer", "Pub", "Sports bar"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Cervejaria Nortada",
+      "coordinates": {
+        "latitude": 41.147961,
+        "longitude": -8.608217
+      },
+      "address": "R. de Sa da Bandeira 210 Vila Nova de Gaia 4000-381",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/UbjogX9gNPktSLZR8",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Beer", "Craft beer", "Bar"],
+      "medianRating": 0,
+      "numberOfRatings": 0
     }
   ]
 }

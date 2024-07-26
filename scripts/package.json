@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "test": "npx playwright test scripts/tests/get-map-data.spec.ts --project chromium"
+  },
   "devDependencies": {
     "@playwright/test": "^1.45.3",
     "@types/node": "^20.14.12"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }

@@ -46,11 +46,16 @@ interface MenuItem {
   price: number;
 }
 
+interface HoursItem {
+  open: string;
+  close: string;
+}
+
 interface RestaurantData {
   name?: string | null;
   coordinates?: Coordinates | null;
   address?: string | null;
-  hours?: string[] | null;
+  hours?: Array<HoursItem> | null;
   gmaps?: string | null;
   menu?: Array<MenuItem> | null;
   mediaUrl?: string[] | null;
@@ -63,6 +68,7 @@ interface RestaurantData {
 // VENUE_NAME='Chapa Quente' npx playwright test scripts/tests/get-map-data.spec.ts
 // collect from console log data
 test('collect restaurant data', async ({ page }) => {
+  console.log(process.env.VENUE_NAME)
   await page.goto('https://www.bing.com/maps?cp=41.160563%7E-8.633194&lvl=11.0');
   await page.getByRole('button', { name: 'Accept' }).click();
   await page.getByPlaceholder('Find places and landmarks on').click();
@@ -72,14 +78,14 @@ test('collect restaurant data', async ({ page }) => {
   // ... (navigation and interactions as in the original script)
 
   // partial class name selector:
-  // "//div[starts-with(@class, '_wrapper_')"
+  // "//div[starts-with(@class, '_wrapper_')]"
   const generalInfoLocatpr = await page.locator('.b_wftp_cell').first()
   const reviewsLocator = await page.locator('div:nth-child(2) > .b_wftp_cell').first();
 
   const restaurantData: RestaurantData = {};
 
   // Name
-  restaurantData.name = await page.getByRole('heading').textContent();
+  restaurantData.name = await page.locator('.eh_title.b_entityTitle').textContent();
   // get third children of firstAfterName
   const firstAfterName = await page.locator('.b_factrow').first(); // rating, cousine, price level
   const ratingLocator = await firstAfterName.locator('div:nth-child(3)').first();
@@ -100,24 +106,44 @@ test('collect restaurant data', async ({ page }) => {
   restaurantData.coordinates = { latitude, longitude };
 
   // Address
-  restaurantData.address = await page.getByLabel('Address').textContent();
+  restaurantData.address = ((await page.getByLabel('Address').textContent()) ?? '').split('·')[0].trim();
 
+  await page.waitForTimeout(1000);
   // Hours
-  await page.getByLabel('Show more').click();
-  await page.getByLabel('Hours');
-  const hoursText = await page.getByLabel('Hours').textContent() ?? '';
-  // Open · Closes 00:30Days of weekOpen hoursThursday18:00 - 00:30Friday18:00 - 00:30Saturday18:00 - 00:30Sunday18:00 - 00:30MondayClosedTuesdayClosedWednesday18:00 - 00:30
-  restaurantData.hours = hoursText.split("Open hours")[1].split(/(?<=\d{2}:\d{2})/).map((line) => line.trim());
+  try {
+    const hoursLocator = page.getByLabel('Show more');
+    if(hoursLocator) {
+      
+      hoursLocator.first().click();
+      const hoursTextLocator = page.getByLabel('Hours');
+      if(hoursTextLocator) {
+        const hoursText: string | null = await hoursTextLocator.textContent({ timeout: 3000 });
+        if(hoursText && typeof hoursText === 'string') {
+          // Open · Closes 00:30Days of weekOpen hoursThursday18:00 - 00:30Friday18:00 - 00:30Saturday18:00 - 00:30Sunday18:00 - 00:30MondayClosedTuesdayClosedWednesday18:00 - 00:30
+          restaurantData.hours = hoursText.split("Open hours")[1].split(/(?<=\d{2}:\d{2})/).map((line) => line.trim()).map(x => ({
+            open: x.split(' - ')[0],
+            close: x.split(' - ')[1]
+          }));
+        }
+      }
+    }
+  } catch (error) {
+    console.error('Error getting hours', error);
+  }
 
   // Google Maps link (URL)
-  await page.getByLabel('Share').click();
-  // add timeout 5 second
-  await page.waitForTimeout(1000);
-  const clipboardText = await page.getByLabel('Copy URL').textContent();
-  // get from copy buffer
-  // const clipboardText = await page.evaluate(() => navigator.clipboard.readText());
-  restaurantData.gmaps = clipboardText;
-  await page.getByRole('button', { name: 'Close' }).click();
+  try {
+    await page.getByLabel('Share').click();
+    // add timeout 5 second
+    await page.waitForTimeout(1000);
+    const clipboardText = await page.getByLabel('Copy URL').textContent();
+    // get from copy buffer
+    // const clipboardText = await page.evaluate(() => navigator.clipboard.readText());
+    restaurantData.gmaps = clipboardText;
+    await page.getByRole('button', { name: 'Close' }).click();
+  } catch (error) {
+    console.error('Error clicking Share', error);
+  }
 
   // Menu (sample item names and prices)
   restaurantData.menu = [];
