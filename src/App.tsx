@@ -18,7 +18,7 @@ interface IFilter {
 }
 
 const App: FC = () => {
-  const [openFilters, setOpenFilters] = useState(false)
+  // const [openFilters, setOpenFilters] = useState(false)
   const [mapMode, setMapMode] = useState(false)
   const [showChips, setShowChips] = useState(false)
   const [searchInFilters, setSearchInFilters] = useState('')
@@ -42,9 +42,9 @@ const App: FC = () => {
     })
   }
 
-  const handleToggleFilters = () => {
-    setOpenFilters(!openFilters)
-  }
+  // const handleToggleFilters = () => {
+  //   setOpenFilters(!openFilters)
+  // }
 
   const handleToggleMapMode = () => {
     setMapMode(!mapMode)
@@ -103,9 +103,9 @@ const App: FC = () => {
     >
       <div className='flex jc-between'>
         <div className='flex flex-gap'>
-          <button className='filters' onClick={handleToggleFilters}>
+          {/* <button className='filters' onClick={handleToggleFilters}>
             {openFilters ? 'Close Filters' : 'Filters'}
-          </button>
+          </button> */}
           <div className='ChipsFather relative'>
             <input
               type='text'
@@ -126,7 +126,7 @@ const App: FC = () => {
                 {filteredTagItems.map((group, index) => (
                   <div className='filterGroup' key={index}>
                     <div className='filterName'>{group.groupName}</div>
-                    <div className='flex flex-column flex-gap'>
+                    <div className='filterValues'>
                       {group.values.map((tag, index) => (
                         <button
                           onClick={(e) => {
@@ -147,10 +147,10 @@ const App: FC = () => {
         </div>
         <div className='flex flex-gap'>
           <button onClick={handleToggleMapMode}>{mapMode ? 'Map View' : 'Grid View'}</button>
-          <button className='flex flex-gap'>
+          {/* <button className='flex flex-gap'>
             <div>Sort by</div>
             <div>^</div>
-          </button>
+          </button> */}
         </div>
       </div>
       <div className='flex flex-gap'>

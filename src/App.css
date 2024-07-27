@@ -53,13 +53,13 @@
 
 .poi-popup button {
   background-color: #f9f9f9;
-  border-color: #646cff;
-  color: #646cff;
+  border-color: var(--primary-color, #646cff);
+  color: var(--primary-color, #646cff);
 }
 
 .Card {
   /* border-color: #ffffff; */
-  background-color: #646cff;
+  background-color: var(--primary-color, #646cff);
   color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -165,11 +165,12 @@
   padding: 20px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 
-  display: grid;
+  display: flex;
+  flex-direction: column;
   /* three columns equal */
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
   /* gray border between */
-  grid-gap: 20px;
+  gap: 12px;
   
   min-width: 100px;
   max-width: 450px;
@@ -180,13 +181,25 @@
   display: flex;
   flex-direction: column;
 
-  gap: 12px;
+  gap: 4px;
   color: #222222;
+  width: 320px;
 
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.filterGroup::before, .filterGroup::after {
+.filterValues {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filterValues button {
+  padding: 4px 8px;
+}
+
+/* .filterGroup::before, .filterGroup::after {
   content: '';
   position: absolute;
   z-index: 7;
@@ -205,7 +218,7 @@
   block-size: var(--line-thickness, 1px);
   inset-inline-start: 0;
   inset-block-start: calc(var(--line-offset, 12px) * -1);
-}
+} */
 
 .inputWrapper {
   display: flex;
@@ -252,7 +265,7 @@
 }
 
 .directions {
-  background-color: #646cff;
+  background-color: var(--primary-color, #646cff);
   color: #ffffff;
   border-radius: 8px;
   padding: 8px 12px;
@@ -265,7 +278,7 @@
 
 .directions:hover {
   background-color: transparent;
-  color: #646cff;
+  color: var(--primary-color, #646cff);
 }
 
 @media (prefers-color-scheme: light) {
@@ -274,11 +287,23 @@
     color: #ffffff;
   }
   .directions {
-    background-color: #646cff;
+    background-color: var(--primary-color, #646cff);
     color: #ffffff;
   }
   .directions:hover {
     background-color: #f9f9f9;
-    color: #646cff;
+    color: var(--primary-color, #646cff);
+  }
+}
+
+/* media for mobile */
+@media (max-width: 768px) {
+  .Cards {
+    display: flex;
+    flex-direction: column;
+  } 
+  .Card {
+    min-width: calc(100% - var(--app-padding-horizontal) * 2);
+    max-width: calc(100% - var(--app-padding-horizontal) * 2);
   }
 }

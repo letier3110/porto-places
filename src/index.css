@@ -1,4 +1,5 @@
 :root {
+  --primary-color: rgb(15, 47, 127);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -15,7 +16,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--primary-color, #646cff);
   text-decoration: inherit;
 }
 a:hover {
@@ -28,6 +29,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url('assets/BgReverse.png');
+  background-size: 300px;
 }
 
 h1 {
@@ -36,7 +39,7 @@ h1 {
 }
 
 button {
-  background-color: #646cff;
+  background-color: var(--primary-color, #646cff);
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -50,8 +53,8 @@ button {
 
 button:hover {
   background-color: transparent;
-  border-color: #646cff;
-  color: #646cff;
+  border-color: var(--primary-color, #646cff);
+  color: var(--primary-color, #646cff);
 }
 button:focus,
 button:focus-visible {
@@ -59,7 +62,7 @@ button:focus-visible {
 }
 
 .Chip {
-  background-color: #646cff;
+  background-color: var(--primary-color, #646cff);
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 2px 4px 2px 4px;
@@ -73,8 +76,8 @@ button:focus-visible {
 
 .Chip:hover {
   background-color: #f9f9f9;
-  border-color: #646cff;
-  color: #646cff;
+  border-color: var(--primary-color, #646cff);
+  color: var(--primary-color, #646cff);
 }
 .Chip:hover .ChipClose {
   color: white;
@@ -110,7 +113,7 @@ button:focus-visible {
 }
 
 .ChipDelete {
-  background-color: transparent;
+  background-color: white;
   border: 1px solid #ff2222;
   color: #ff2222;
 }
@@ -118,7 +121,7 @@ button:focus-visible {
 .ChipDelete:hover {
   background-color: #ff2222;
   color: white;
-  border-color: transparent;
+  border-color: white;
 }
 
 input {
@@ -135,8 +138,8 @@ input {
 
 input:hover {
   background-color: #242424;
-  border-color: #646cff;
-  color: #646cff;
+  border-color: var(--primary-color, #646cff);
+  color: var(--primary-color, #646cff);
 }
 input:focus,
 input:focus-visible {
@@ -157,8 +160,8 @@ input:focus-visible {
 
 .input:hover {
   background-color: #242424;
-  border-color: #646cff;
-  color: #646cff;
+  border-color: var(--primary-color, #646cff);
+  color: var(--primary-color, #646cff);
 }
 .input:focus,
 .input:focus-visible {
@@ -170,22 +173,25 @@ input:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+  body {
+    background-image: url('assets/Bg.png');
+  }
   button:hover {
     background-color: #f9f9f9;
-    border-color: #646cff;
-    color: #646cff;
+    border-color: var(--primary-color, #646cff);
+    color: var(--primary-color, #646cff);
   }
   a:hover {
     color: #747bff;
   }
   input:hover {
     background-color: #f9f9f9;
-    border-color: #646cff;
-    color: #646cff;
+    border-color: var(--primary-color, #646cff);
+    color: var(--primary-color, #646cff);
   }
   .input:hover {
     background-color: #f9f9f9;
-    border-color: #646cff;
-    color: #646cff;
+    border-color: var(--primary-color, #646cff);
+    color: var(--primary-color, #646cff);
   }
 }
