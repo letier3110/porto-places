@@ -29,7 +29,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url('assets/BgReverse.png');
+  background-image: url('assets/BgReverseSmall.png');
   background-size: 300px;
 }
 
@@ -174,7 +174,7 @@ input:focus-visible {
     background-color: #ffffff;
   }
   body {
-    background-image: url('assets/Bg.png');
+    background-image: url('assets/BgSmall.png');
   }
   button:hover {
     background-color: #f9f9f9;
