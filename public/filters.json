@@ -1,75 +1,101 @@
 [
   {
     "groupName": "Time of day",
-    "values": ["Breakfast", "Lunch", "Dinner", "Late night"]
+    "values": [
+      {"name": "Breakfast 🍳", "value": "Breakfast"},
+      {"name": "Lunch 🍔", "value": "Lunch"},
+      {"name": "Dinner 🍝", "value": "Dinner"},
+      {"name": "Late night 🌙", "value": "Late night"}
+    ]
   },
   {
     "groupName": "Cuisine nationality",
     "values": [
-      "Ukranian",
-      "Italian",
-      "Israeli",
-      "Portuguese",
-      "Brazillian",
-      "Japanese",
-      "French",
-      "Thai",
-      "American",
-      "Greek",
-      "Vietnamese",
-      "Russian",
-      "Belorussian"
+      {"name": "Ukranian 🇺🇦", "value": "Ukranian"},
+      {"name": "Portuguese 🇵🇹", "value": "Portuguese"},
+      {"name": "Brazillian 🇧🇷", "value": "Brazillian"},
+      {"name": "Indian 🇮🇳", "value": "Indian"},
+      {"name": "Italian 🇮🇹", "value": "Italian"},
+      {"name": "Israeli 🇮🇱", "value": "Israeli"},
+      {"name": "Thai 🇹🇭", "value": "Thai"},
+      {"name": "Vietnamese 🇻🇳", "value": "Vietnamese"},
+      {"name": "Russian 🇷🇺", "value": "Russian"},
+      {"name": "Belorussian 🇧🇾", "value": "Belorussian"}
     ]
   },
   {
     "groupName": "Specific dish type",
     "values": [
-      "Pizza",
-      "Sushi",
-      "Burgers",
-      "Ramen",
-      "Tacos",
-      "Pasta",
-      "Franchesinha",
-      "Pancakes",
-      "Steak",
-      "Curry",
-      "Salad",
-      "Sandwiches",
-      "Soup",
-      "Dessert",
-      "Coffee",
-      "Tea",
-      "Cocktails",
-      "Beer",
-      "Wine",
-      "Juice",
-      "Smoothies",
-      "Ice cream",
-      "Bread",
-      "Cheese",
-      "Fruit",
-      "Vegetables",
-      "Fish",
-      "Meat",
-      "Vegan",
-      "Vegetarian",
-      "Gluten-free",
-      "Lactose-free",
-      "Halal",
-      "Kosher"
+      {"name": "Pizza 🍕", "value": "Pizza"},
+      {"name": "Sushi 🍣", "value": "Sushi"},
+      {"name": "Burgers 🍔", "value": "Burgers"},
+      {"name": "Ramen 🍜", "value": "Ramen"},
+      {"name": "Tacos 🌮", "value": "Tacos"},
+      {"name": "Pasta 🍝", "value": "Pasta"},
+      {"name": "Franchesinha 🥪", "value": "Franchesinha"},
+      {"name": "Pancakes 🥞", "value": "Pancakes"},
+      {"name": "Steak 🥩", "value": "Steak"},
+      {"name": "Curry 🍛", "value": "Curry"},
+      {"name": "Salad 🥗", "value": "Salad"},
+      {"name": "Sandwiches 🥪", "value": "Sandwiches"},
+      {"name": "Soup 🍲", "value": "Soup"},
+      {"name": "Dessert 🍰", "value": "Dessert"},
+      {"name": "Coffee ☕", "value": "Coffee"},
+      {"name": "Tea 🍵", "value": "Tea"},
+      {"name": "Cocktails 🍹", "value": "Cocktails"},
+      {"name": "Beer 🍺", "value": "Beer"},
+      {"name": "Wine 🍷", "value": "Wine"},
+      {"name": "Juice 🥤", "value": "Juice"},
+      {"name": "Smoothies 🥤", "value": "Smoothies"},
+      {"name": "Ice cream 🍦", "value": "Ice cream"},
+      {"name": "Bread 🍞", "value": "Bread"},
+      {"name": "Cheese 🧀", "value": "Cheese"},
+      {"name": "Fruit 🍎", "value": "Fruit"},
+      {"name": "Vegetables 🥦", "value": "Vegetables"},
+      {"name": "Fish 🐟", "value": "Fish"},
+      {"name": "Meat 🍖", "value": "Meat"},
+      {"name": "Gluten-free 🚫🍞", "value": "Gluten-free"},
+      {"name": "Vegan 🌱", "value": "Vegan"},
+      {"name": "Vegetarian 🥦", "value": "Vegetarian"},
+      {"name": "Lactose-free 🚫🥛", "value": "Lactose-free"},
+      {"name": "Keto 🥩", "value": "Keto"},
+      {"name": "Halal 🕌", "value": "Halal"},
+      {"name": "Kosher 🕍", "value": "Kosher"}
     ]
   },
   {
     "groupName": "Seating",
-    "values": ["Indoor", "Outdoor", "Rooftop", "Bar", "Counter", "Table", "Food court", "Shared", "Ocean"]
+    "values": [
+      {"name": "Indoor 🏠", "value": "Indoor"},
+      {"name": "Outdoor 🌳", "value": "Outdoor"},
+      {"name": "Rooftop 🌆", "value": "Rooftop"},
+      {"name": "Bar 🍸", "value": "Bar"},
+      {"name": "Counter 🪑", "value": "Counter"},
+      {"name": "Table 🪑", "value": "Table"},
+      {"name": "Food court 🍽️", "value": "Food court"},
+      {"name": "Shared 🪑", "value": "Shared"},
+      {"name": "Ocean 🌊", "value": "Ocean"}
+    ]
   },
   {
     "groupName": "Establishment type",
-    "values": ["Restaurant", "Cafe", "Bar", "Fast food", "Food truck", "Bistro", "Diner", "Pub"]
+    "values": [
+      {"name": "Restaurant 🍽️", "value": "Restaurant"},
+      {"name": "Cafe ☕", "value": "Cafe"},
+      {"name": "Bar 🍸", "value": "Bar"},
+      {"name": "Fast food 🍟", "value": "Fast food"},
+      {"name": "Food truck 🚚", "value": "Food truck"},
+      {"name": "Bistro 🍽️", "value": "Bistro"},
+      {"name": "Diner 🍽️", "value": "Diner"},
+      {"name": "Pub 🍺", "value": "Pub"}
+    ]
   },
   {
     "groupName": "Dining options",
-    "values": ["Dine-in", "Takeaway", "Delivery"]
+    "values": [
+      {"name": "Dine-in 🍽️", "value": "Dine-in"},
+      {"name": "Takeaway 🥡", "value": "Takeaway"},
+      {"name": "Delivery 🚚", "value": "Delivery"}
+    ]
   }
 ]

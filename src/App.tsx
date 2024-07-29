@@ -4,6 +4,7 @@ import { FC, useState } from 'react'
 import './App.css'
 import Card from './Card'
 import CardsData from '../public/data.json'
+import PlaceModeData from '../public/mode.json'
 import tagGroups from '../public/filters.json'
 import { DataEntry } from './interfaces'
 import Map from './Map'
@@ -22,11 +23,14 @@ const App: FC = () => {
   const [mapMode, setMapMode] = useState(false)
   const [showChips, setShowChips] = useState(false)
   const [searchInFilters, setSearchInFilters] = useState('')
+  const [mode, setMode] = useState(PlaceModeData[0].name)
   const [filters, setFilters] = useState<IFilter>({
     search: '',
     tags: [],
     sort: 'rating'
   })
+
+  const currentMode = PlaceModeData.find((placeMode) => placeMode.name === mode)
 
   const handleAddFilterTag = (tag: string) => {
     setFilters({
@@ -42,9 +46,10 @@ const App: FC = () => {
     })
   }
 
-  // const handleToggleFilters = () => {
-  //   setOpenFilters(!openFilters)
-  // }
+  const handleToggleMode = () => {
+    const nextModeIndex = PlaceModeData.findIndex((placeMode) => placeMode.name === mode) + 1;
+    setMode(PlaceModeData[nextModeIndex % PlaceModeData.length].name)
+  }
 
   const handleToggleMapMode = () => {
     setMapMode(!mapMode)
@@ -58,25 +63,27 @@ const App: FC = () => {
     setShowChips(false)
   }
 
-  const filteredContent = cardsData.filter((card) => {
-    if (filters.tags.length > 0) {
-      return filters.tags.every((tag) => card.tags.includes(tag))
-    }
-    return true
-  })
+  const filteredContent = cardsData
+    .filter((card) => currentMode?.value.every((tag) => card.tags.includes(tag)))
+    .filter((card) => {
+      if (filters.tags.length > 0) {
+        return filters.tags.every((tag) => card.tags.includes(tag))
+      }
+      return true
+    })
 
   const maxTagItems = 3
   const unlimitedFilters = tagGroups
-    .filter((group) => group.values.some((tag) => tag.toLowerCase().includes(searchInFilters.toLowerCase())))
+    .filter((group) => group.values.some((tag) => tag.value.toLowerCase().includes(searchInFilters.toLowerCase())))
     .map((group) => {
-      const tags = group.values.filter((tag) => tag.toLowerCase().includes(searchInFilters.toLowerCase()))
+      const tags = group.values.filter((tag) => tag.value.toLowerCase().includes(searchInFilters.toLowerCase()))
       return {
         groupName: group.groupName,
         values: tags
       }
     })
     .map((group) => {
-      const tags = group.values.filter((tag) => !filters.tags.includes(tag))
+      const tags = group.values.filter((tag) => !filters.tags.includes(tag.value))
       return {
         groupName: group.groupName,
         values: tags.length > maxTagItems ? tags.slice(0, maxTagItems) : tags
@@ -87,7 +94,7 @@ const App: FC = () => {
   const handleSubmitSearchInFilters = () => {
     if (filteredTagItems.length > 0 && filteredTagItems[0].values.length > 0) {
       setFilters({
-        tags: filters.tags.concat(filteredTagItems[0].values[0]),
+        tags: filters.tags.concat(filteredTagItems[0].values[0].value),
         search: '',
         sort: 'rating'
       })
@@ -103,9 +110,9 @@ const App: FC = () => {
     >
       <div className='flex jc-between'>
         <div className='flex flex-gap'>
-          {/* <button className='filters' onClick={handleToggleFilters}>
-            {openFilters ? 'Close Filters' : 'Filters'}
-          </button> */}
+          <button className='filters' onClick={handleToggleMode}>
+            {mode}
+          </button>
           <div className='ChipsFather relative'>
             <input
               type='text'
@@ -131,11 +138,11 @@ const App: FC = () => {
                         <button
                           onClick={(e) => {
                             e.stopPropagation()
-                            handleAddFilterTag(tag)
+                            handleAddFilterTag(tag.value)
                           }}
                           key={index}
                         >
-                          {tag}
+                          {tag.name}
                         </button>
                       ))}
                     </div>
@@ -182,19 +189,23 @@ const App: FC = () => {
           </div>
         )}
       </div>
-      {!mapMode && (<div className='Cards'>
-        {filteredContent.map((cardData, index) => (
-          <Card cardData={cardData} index={index + 1} key={index} />
-        ))}
-      </div>)}
-      {mapMode && (<div className='CardsWithMap'>
-        <div>
+      {!mapMode && (
+        <div className='Cards'>
           {filteredContent.map((cardData, index) => (
             <Card cardData={cardData} index={index + 1} key={index} />
           ))}
         </div>
-        <Map />
-      </div>)}
+      )}
+      {mapMode && (
+        <div className='CardsWithMap'>
+          <div>
+            {filteredContent.map((cardData, index) => (
+              <Card cardData={cardData} index={index + 1} key={index} />
+            ))}
+          </div>
+          <Map />
+        </div>
+      )}
     </div>
   )
 }

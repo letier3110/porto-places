@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Food & Drink 🍔",
+    "value": ["Food"]
+  },
+  {
+    "name": "Climbing 🧗",
+    "value": ["Sport", "Climbing"]
+  },
+  {
+    "name": "Geek 🎮",
+    "value": ["Geek"]
+  }
+]
