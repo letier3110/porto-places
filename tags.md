@@ -48,6 +48,7 @@ Identifies features of the place:
 * pet-friendly: welcomes pets or your children
 * good for dates: offers good setting for dates
 * lgbtq+-friendly: as it sounds
+* board games friendly: for those who like it
 
 ## Local experience (if applicable)
 Identifies how local it is:
