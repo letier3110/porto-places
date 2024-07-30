@@ -198,12 +198,12 @@ const App: FC = () => {
       )}
       {mapMode && (
         <div className='CardsWithMap'>
-          <div>
+          <div className='MapContent'>
             {filteredContent.map((cardData, index) => (
               <Card cardData={cardData} index={index + 1} key={index} />
             ))}
           </div>
-          <Map />
+          <Map data={filteredContent} />
         </div>
       )}
     </div>

@@ -42,7 +42,17 @@
 .CardsWithMap {
   display: grid;
   gap: 12px;
-  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+  grid-template-columns: minmax(250px, 390px) 1fr;
+  max-height: calc(100vh - 32px - 52px - var(--app-padding-vertical) * 2);
+  height: 100vh;
+}
+
+.MapContent {
+  overflow: overlay;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .Cards {

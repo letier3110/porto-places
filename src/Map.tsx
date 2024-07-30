@@ -1,26 +1,26 @@
 import mapboxgl from 'mapbox-gl'
-import { FC, useEffect, useRef, useState } from 'react'
+import { FC, useEffect, useMemo, useRef, useState } from 'react'
 import ErrorBoundary from './ErrorBoundary'
-import CardsData from '../public/data.json'
 import { DataEntry } from './interfaces'
-
-const data = CardsData as { data: Array<DataEntry> }
-const cardsData = data.data
 // import access token from .env file from vite environment variables
 
 mapboxgl.accessToken = (import.meta.env.VITE_MAPBOX_ACCESS_TOKEN as string) || ''
 
-const MapWrapper = () => {
+interface MapProps {
+  data: Array<DataEntry>
+}
+
+const MapWrapper: FC<MapProps> = ({ data }) => {
   return (
     <div className='map-wrapper'>
       <ErrorBoundary fallback={'Cant Load Maps'}>
-        <Map />
+        <Map data={data} />
       </ErrorBoundary>
     </div>
   )
 }
 
-const poiData = {
+const initialPoiData = {
   type: 'FeatureCollection',
   features: [
     {
@@ -56,38 +56,45 @@ const poiData = {
         coordinates: [-8.6107, 41.1456]
       }
     }
-  ].concat(cardsData.map((card) => ({
-    type: 'Feature',
-    properties: {
-      name: card.name,
-      color: '#FF5733'
-    },
-    geometry: {
-      type: 'Point',
-      coordinates: [card.coordinates.longitude, card.coordinates.latitude]
-    }
-  })))
+  ]
 }
 
-const Map: FC = () => {
+const Map: FC<MapProps> = ({ data }) => {
   const mapContainer = useRef<HTMLDivElement>(null)
   const map = useRef<mapboxgl.Map | null>(null)
   const [lat, ] = useState(41.1579)
   const [lng, ] = useState(-8.6291)
   const [zoom, ] = useState(13)
+
+  const poiData = useMemo(() => {
+    return {
+      ...initialPoiData,
+      features: initialPoiData.features.concat(data.map((card) => ({
+        type: 'Feature',
+        properties: {
+          name: card.name,
+          color: '#FF5733'
+        },
+        geometry: {
+          type: 'Point',
+          coordinates: [card.coordinates.longitude, card.coordinates.latitude]
+        }
+      })))
+    };
+  }, [data])
   useEffect(() => {
     if (map.current) return // initialize map only once
     // create map once, then "fly" to new locations
     map.current = new mapboxgl.Map({
       container: mapContainer.current as never, // container ID
       // traffic v12
-      style: 'mapbox://styles/mapbox/streets-v12', // style URL
+      style: 'mapbox://styles/mapbox/dark-v11', // style URL
       // center: [-8.6291, 41.1579], // Porto coordinates
       // zoom: 13,
       center: [lng, lat],
       zoom: zoom,
-      pitch: 60,
-      bearing: -60,
+      // pitch: 60,
+      // bearing: -60,
       dragRotate: false,
       touchZoomRotate: false
     })
@@ -184,7 +191,7 @@ const Map: FC = () => {
         })
       })
     }
-  })
+  }, [poiData])
   return <div ref={mapContainer} id='map' style={{ width: '100%', height: '100%' }}></div>
 }
 
