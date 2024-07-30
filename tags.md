@@ -60,7 +60,6 @@ Identifies how local it is:
 ## Additional tags
 > Note: BB is still not sure about these
 Some tags that may be added:
-* best times to visit: morning, daytime, evening
 * work times: early bird, late times, all-day all-night (may be retrieved from open hours)
 
 ## Tags order
