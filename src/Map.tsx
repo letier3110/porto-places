@@ -27,7 +27,7 @@ const initialPoiData = {
       type: 'Feature',
       properties: {
         name: 'Clérigos Tower',
-        color: '#FF5733'
+        color: '#AC9733'
       },
       geometry: {
         type: 'Point',
@@ -62,6 +62,7 @@ const initialPoiData = {
 const Map: FC<MapProps> = ({ data }) => {
   const mapContainer = useRef<HTMLDivElement>(null)
   const map = useRef<mapboxgl.Map | null>(null)
+  const prevData = useRef<Array<DataEntry>>([])
   const [lat, ] = useState(41.1579)
   const [lng, ] = useState(-8.6291)
   const [zoom, ] = useState(13)
@@ -83,7 +84,40 @@ const Map: FC<MapProps> = ({ data }) => {
     };
   }, [data])
   useEffect(() => {
-    if (map.current) return // initialize map only once
+    if (map.current) {
+      // if map loaded && data changed
+      if (prevData.current.every((card, index) => card === data[index]) && prevData.current.length === data.length) {
+        return;
+      }
+      if(map.current.getSource('poi-source') && map.current.getLayer('poi-layer')) {
+        prevData.current = data
+        map.current.removeLayer('poi-layer');
+        map.current.removeSource('poi-source');
+        map.current.addSource('poi-source', {
+          type: 'geojson',
+          data: poiData
+        });
+        map.current.addLayer({
+          id: 'poi-layer',
+          source: 'poi-source',
+          type: 'circle',
+          paint: {
+            'circle-radius': 6,
+            'circle-color': ['get', 'color']
+          }
+
+
+          // type: 'fill-extrusion',
+          // paint: {
+          //   'fill-extrusion-color': ['get', 'color'],
+          //   'fill-extrusion-height': ['get', 'height'],
+          //   'fill-extrusion-base': 0,
+          //   'fill-extrusion-opacity': 0.8
+          // }
+        })
+        return;
+      }
+    } // initialize map only once
     // create map once, then "fly" to new locations
     map.current = new mapboxgl.Map({
       container: mapContainer.current as never, // container ID
@@ -101,6 +135,15 @@ const Map: FC<MapProps> = ({ data }) => {
     if (map.current) {
       map.current.on('load', () => {
         if (!map.current) return
+        map.current.addControl(new mapboxgl.NavigationControl())
+        map.current.addControl(new mapboxgl.FullscreenControl())
+        map.current.addControl(new mapboxgl.GeolocateControl({
+          positionOptions: {
+            enableHighAccuracy: true
+          },
+          trackUserLocation: true
+        }))
+        prevData.current = data
         map.current.addSource('poi-source', {
           type: 'geojson',
           data: poiData
@@ -192,6 +235,7 @@ const Map: FC<MapProps> = ({ data }) => {
       })
     }
   }, [poiData])
+
   return <div ref={mapContainer} id='map' style={{ width: '100%', height: '100%' }}></div>
 }
 

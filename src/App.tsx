@@ -101,6 +101,66 @@ const App: FC = () => {
     }
   }
 
+  const Modes = (<button className='filters' onClick={handleToggleMode}>
+    {mode}
+  </button>)
+
+  const Filters = (<div className='ChipsFather relative'>
+    <input
+      type='text'
+      onFocus={enableChips}
+      placeholder='Search'
+      value={searchInFilters}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter') {
+          handleSubmitSearchInFilters()
+        }
+      }}
+      onClick={(e) => e.stopPropagation()}
+      onChange={(e) => setSearchInFilters(e.target.value)}
+      onSubmit={handleSubmitSearchInFilters}
+    />
+    {showChips && (
+      <div className='ChipsModal'>
+        {filteredTagItems.map((group, index) => (
+          <div className='filterGroup' key={index}>
+            <div className='filterName'>{group.groupName}</div>
+            <div className='filterValues'>
+              {group.values.map((tag, index) => (
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    handleAddFilterTag(tag.value)
+                  }}
+                  key={index}
+                >
+                  {tag.name}
+                </button>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+  </div>)
+
+  const ViewMode = (<div className='ViewMode'>
+    <button className='ViewModeBtn' onClick={handleToggleMapMode}>{mapMode ? 'Map View' : 'Grid View'}</button>
+  </div>)
+
+// suggest your favorite place and add emoji
+  const Mailto = (
+    <div className='MailLink'>
+      <button>
+      <a className='btn' href={`mailto:${(import.meta.env.VITE_EMAIL as string) || ''}?subject=Cool place in Porto`}>
+        <span>💌</span>
+        <span>Send us your favorite place</span>
+        <span>💌</span>
+      </a>
+      </button>
+    </div>
+  )
+
   return (
     <div
       className='flex flex-column flex-gap AppContainer'
@@ -108,57 +168,21 @@ const App: FC = () => {
         disableChips()
       }}
     >
-      <div className='flex jc-between'>
-        <div className='flex flex-gap'>
-          <button className='filters' onClick={handleToggleMode}>
-            {mode}
-          </button>
-          <div className='ChipsFather relative'>
-            <input
-              type='text'
-              onFocus={enableChips}
-              placeholder='Search'
-              value={searchInFilters}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter') {
-                  handleSubmitSearchInFilters()
-                }
-              }}
-              onClick={(e) => e.stopPropagation()}
-              onChange={(e) => setSearchInFilters(e.target.value)}
-              onSubmit={handleSubmitSearchInFilters}
-            />
-            {showChips && (
-              <div className='ChipsModal'>
-                {filteredTagItems.map((group, index) => (
-                  <div className='filterGroup' key={index}>
-                    <div className='filterName'>{group.groupName}</div>
-                    <div className='filterValues'>
-                      {group.values.map((tag, index) => (
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation()
-                            handleAddFilterTag(tag.value)
-                          }}
-                          key={index}
-                        >
-                          {tag.name}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
+      <div className='Header'>
+        <div className='FiltersAndModes'>
+          {Modes}
+          {Filters}
         </div>
         <div className='flex flex-gap'>
-          <button onClick={handleToggleMapMode}>{mapMode ? 'Map View' : 'Grid View'}</button>
-          {/* <button className='flex flex-gap'>
-            <div>Sort by</div>
-            <div>^</div>
-          </button> */}
+          {ViewMode}
+          {Mailto}
         </div>
+      </div>
+      <div className='MobileHeader'>
+        {Modes}
+        {Filters}
+        {ViewMode}
+        {Mailto}
       </div>
       <div className='flex flex-gap'>
         {filters.tags.length > 0 && (

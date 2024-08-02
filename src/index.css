@@ -49,16 +49,22 @@ button {
   font-family: inherit;
   cursor: pointer;
   transition: color background-color border-color 0.25s;
+  outline: none;
 }
 
 button:hover {
   background-color: rgb(18, 18, 18);
   border-color: var(--primary-color, #646cff);
-  color: var(--primary-color, #646cff);
+  /* color: var(--primary-color, #646cff); */
+  color: #ffffff;
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: none;
+}
+
+button a {
+  color: #ffffff;
 }
 
 .Chip {
