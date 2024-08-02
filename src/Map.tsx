@@ -117,6 +117,7 @@ const Map: FC<MapProps> = ({ data }) => {
         })
         return;
       }
+      return;
     } // initialize map only once
     // create map once, then "fly" to new locations
     map.current = new mapboxgl.Map({
