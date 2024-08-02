@@ -1,146 +1,370 @@
 [
-  {
-    "name": "Chapa Quente",
-    "coordinates": {
-      "latitude": 41.160563,
-      "longitude": -8.633194
+    {
+      "name": "Chapa Quente",
+      "coordinates": {
+        "latitude": 41.160563,
+        "longitude": -8.633194
+      },
+      "address": "Praça República 206 Porto 4050-498 · 2,0 km",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/rHyauwBpQdDjCzHNA",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Brazilian", "Burger"],
+      "medianRating": 0,
+      "numberOfRatings": 0
     },
-    "address": "Praça República 206 Porto 4050-498 · 2,0 km",
-    "hours": [],
-    "gmaps": "https://maps.app.goo.gl/rHyauwBpQdDjCzHNA",
-    "menu": [],
-    "mediaUrl": [],
-    "reviews": [],
-    "tags": ["Brazilian", "Burger"],
-    "medianRating": 0,
-    "numberOfRatings": 0
-  },
-  {
-    "name": "Baobab - craft beer bar",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+    {
+      "name": "Baobab - craft beer bar",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/VgA14LGjcsBEmNqb9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Beer", "Craft beer", "Bar"],
+      "medianRating": 0,
+      "numberOfRatings": 0
     },
-    "address": "",
-    "hours": [],
-    "gmaps": "https://maps.app.goo.gl/VgA14LGjcsBEmNqb9",
-    "menu": [],
-    "mediaUrl": [],
-    "reviews": [],
-    "tags": ["Beer", "Craft beer", "Bar"],
-    "medianRating": 0,
-    "numberOfRatings": 0
-  },
-  {
-    "name": "Rice - Vietnamita Cozinha",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+    {
+      "name": "Rice - Vietnamita Cozinha",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/azc4DsNoUnTK9GmP6",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Vietmamese", "Cafe"],
+      "medianRating": 0,
+      "numberOfRatings": 0
     },
-    "address": "",
-    "hours": [],
-    "gmaps": "https://maps.app.goo.gl/azc4DsNoUnTK9GmP6",
-    "menu": [],
-    "mediaUrl": [],
-    "reviews": [],
-    "tags": ["Vietmamese", "Cafe"],
-    "medianRating": 0,
-    "numberOfRatings": 0
-  },
-  {
-    "name": "FÉ Wine & Club",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+    {
+      "name": "FÉ Wine & Club",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/cZtfCT4W2swdMWcMA",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Cocktails", "Wine"],
+      "medianRating": 0,
+      "numberOfRatings": 0
     },
-    "address": "",
-    "hours": [],
-    "gmaps": "https://maps.app.goo.gl/cZtfCT4W2swdMWcMA",
-    "menu": [],
-    "mediaUrl": [],
-    "reviews": [],
-    "tags": ["Cocktails", "Wine"],
-    "medianRating": 0,
-    "numberOfRatings": 0
-  },
-  {
-    "name": "Coqueluche",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+    {
+      "name": "Coqueluche",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/2yoak6c3KQHn2z516",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Beer", "Local", "Sports bar", "Bar"],
+      "medianRating": 0,
+      "numberOfRatings": 0
     },
-    "address": "",
-    "hours": [],
-    "gmaps": "https://maps.app.goo.gl/2yoak6c3KQHn2z516",
-    "menu": [],
-    "mediaUrl": [],
-    "reviews": [],
-    "tags": ["Beer", "Local", "Sports bar", "Bar"],
-    "medianRating": 0,
-    "numberOfRatings": 0
-  },
-  {
-    "name": "Bali-Hai Polynesian Bar",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+    {
+      "name": "Bali-Hai Polynesian Bar",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/xyaRPvbu5PFaRTBu8",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Cocktails", "Bar"],
+      "medianRating": 0,
+      "numberOfRatings": 0
     },
-    "address": "",
-    "hours": [],
-    "gmaps": "https://maps.app.goo.gl/xyaRPvbu5PFaRTBu8",
-    "menu": [],
-    "mediaUrl": [],
-    "reviews": [],
-    "tags": ["Cocktails", "Bar"],
-    "medianRating": 0,
-    "numberOfRatings": 0
-  },
-  {
-    "name": "Iguarias de HANÓI",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+    {
+      "name": "Iguarias de HANÓI",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/4WA9Sx21AzYYrnNT7",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Vietmamese", "Cafe"],
+      "medianRating": 0,
+      "numberOfRatings": 0
     },
-    "address": "",
-    "hours": [],
-    "gmaps": "https://maps.app.goo.gl/4WA9Sx21AzYYrnNT7",
-    "menu": [],
-    "mediaUrl": [],
-    "reviews": [],
-    "tags": ["Vietmamese", "Cafe"],
-    "medianRating": 0,
-    "numberOfRatings": 0
-  },
-  {
-    "name": "Pub Bonaparte Foz",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+    {
+      "name": "Pub Bonaparte Foz",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/t8y5j5g6DN3pDfQK7",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Beer", "Pub", "Sports bar"],
+      "medianRating": 0,
+      "numberOfRatings": 0
     },
-    "address": "",
-    "hours": [],
-    "gmaps": "https://maps.app.goo.gl/t8y5j5g6DN3pDfQK7",
-    "menu": [],
-    "mediaUrl": [],
-    "reviews": [],
-    "tags": ["Beer", "Pub", "Sports bar"],
-    "medianRating": 0,
-    "numberOfRatings": 0
-  },
-  {
-    "name": "Cervejaria Nortada",
-    "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+    {
+      "name": "Cervejaria Nortada",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/UbjogX9gNPktSLZR8",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Beer", "Craft beer", "Bar"],
+      "medianRating": 0,
+      "numberOfRatings": 0
     },
-    "address": "",
-    "hours": [],
-    "gmaps": "https://maps.app.goo.gl/UbjogX9gNPktSLZR8",
-    "menu": [],
-    "mediaUrl": [],
-    "reviews": [],
-    "tags": ["Beer", "Craft beer", "Bar"],
-    "medianRating": 0,
-    "numberOfRatings": 0
-  }
-]
+    {
+      "name": "Certain Cafe",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/5ZDxufjD6Kb6F7wT9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry", "Breakfast"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Senzu Coffee Roasters",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/9hssXsY757ErbyAR7",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "von&vonnie microroasters",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/p5W3yiiHX34rvjTa7",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "7g Roaster",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/dChHvtdh3WaSY6ef9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "SO Coffee Roasters",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/tZLe38ne8QzASmE28",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "So Coffee Roasters - The Feeting Room",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/Wcm3DcVbymBB5UzH6",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "SO Coffee Roasters",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/shzWstW8aCpJBhn18",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Hakko",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/xZEAheMmfuihL4Bi8",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Brunch", "Breakfast"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "C'alma Coffee",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/HGSoH4JWU24jQtKQ9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "STORY | brunch & cocktails",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/bPH9Xx3UbfMR5H2U9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Brunch", "Cocktails"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Época Porto",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/PzUZf6gouRRPH7ha9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "MANNA ~ Food & Yoga",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/hBNhRhdpbV3weEzH7",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Breakfast", "Brunch", "Vegetarian"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Combi Coffee Roasters",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/WHBSqJPvUw61fLBP9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Café Passaporte",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/Z1N3ru5zULczDMMQA",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    }
+  ]
