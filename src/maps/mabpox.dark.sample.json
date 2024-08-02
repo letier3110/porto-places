@@ -5315,8 +5315,8 @@
               "scheme": "xyz",
               "tilejson": "2.2.0",
               "tiles": [
-                  "https://a.tiles.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/{z}/{x}/{y}.vector.pbf?access_token=sk.eyJ1IjoiY29yb3MiLCJhIjoiY2txcWZqNWFsMHFobTJ3cGI2NDRyd3I4YyJ9.PRtnzu5S7G4nV566Tfd2aA",
-                  "https://b.tiles.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/{z}/{x}/{y}.vector.pbf?access_token=sk.eyJ1IjoiY29yb3MiLCJhIjoiY2txcWZqNWFsMHFobTJ3cGI2NDRyd3I4YyJ9.PRtnzu5S7G4nV566Tfd2aA"
+                  "https://a.tiles.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/{z}/{x}/{y}.vector.pbf?access_token=",
+                  "https://b.tiles.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/{z}/{x}/{y}.vector.pbf?access_token="
               ],
               "vector_layers": [
                   {
