@@ -64,7 +64,7 @@
         "comment": "Good. Have to try the spicy one (€8.5)"
       }
     ],
-    "tags": ["Japanese", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Food"],
+    "tags": ["Japanese", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Food and drink"],
     "medianRating": 9.6,
     "numberOfRatings": 182
   },
@@ -102,7 +102,7 @@
           "comment": "Good. Have to try the spicy one (€8.5)"
         }
       ],
-      "tags": ["Japanese", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Dine-in", "Takeaway", "Delivery", "Food"],
+      "tags": ["Japanese", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Dine-in", "Takeaway", "Delivery", "Food and drink"],
       "medianRating": 9.6,
       "numberOfRatings": 182
     },
@@ -138,7 +138,7 @@
           "comment": "Good. Have to try the spicy one (€8.5)"
         }
       ],
-      "tags": ["Korean", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Dine-in", "Takeaway", "Delivery", "Food"],
+      "tags": ["Korean", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Dine-in", "Takeaway", "Delivery", "Food and drink"],
       "medianRating": 9.2,
       "numberOfRatings": 229
     },
@@ -174,7 +174,7 @@
           "comment": "Good. Have to try the spicy one (€8.5)"
         }
       ],
-      "tags": ["Japanese", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Dine-in", "Takeaway", "Delivery", "Food"],
+      "tags": ["Japanese", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Dine-in", "Takeaway", "Delivery", "Food and drink"],
       "medianRating": 8.4,
       "numberOfRatings": 2164
     },
@@ -206,7 +206,7 @@
           "comment": "Good. Have to try the spicy one (€8.5)"
         }
       ],
-      "tags": ["Portuguese", "Burger", "Porto", "Cheap", "Takeaway", "Delivery", "Food"],
+      "tags": ["Portuguese", "Burger", "Porto", "Cheap", "Takeaway", "Delivery", "Food and drink"],
       "medianRating": 9.4,
       "numberOfRatings": 1971
     },
@@ -222,7 +222,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPJ-9VE-ZZT-_8wEZrWgQmoZXg9SHxU1cYMGGjN=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Brazilian", "Burger", "Food"],
+      "tags": ["Brazilian", "Burger", "Food and drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -238,7 +238,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOWFmVU3erS15zzs_uCFC2HwNmImodkknH72kwk=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Beer", "Craft beer", "Bar", "Food"],
+      "tags": ["Beer", "Craft beer", "Bar", "Food and drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -254,7 +254,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipMBanzANYjLrZMN6N5h8rLW5jk_5nEuisq1oDga=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Vietmamese", "Cafe", "Food"],
+      "tags": ["Vietmamese", "Cafe", "Food and drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -307,7 +307,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPjV0czoAbrXMctjuyNAHCb3JbrTLyAuLQw04wu=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Cocktails", "Wine", "Food"],
+      "tags": ["Cocktails", "Wine", "Food and drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -366,7 +366,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOfM4hD8yG0zt8ukvw4-PnFHHEH1A9AdLFAqihc=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Beer", "Local", "Sports bar", "Bar", "Food"],
+      "tags": ["Beer", "Local", "Sports bar", "Bar", "Food and drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -419,7 +419,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipNDpBrf_3ROqz1RPztVi6RAq1SFdLrDcDzi7dYv=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Cocktails", "Bar", "Food"],
+      "tags": ["Cocktails", "Bar", "Food and drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -478,7 +478,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPgdSgiPAbbCYYVA_etMpNBgkflNdThhUydCZU=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Vietmamese", "Cafe", "Food"],
+      "tags": ["Vietnamese", "Cafe", "Food and drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -537,7 +537,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipNFKKeBxGPu593vP-cmZ2_R29kFNSCtJfAscuas=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Beer", "Pub", "Sports bar", "Food"],
+      "tags": ["Beer", "Pub", "Sports bar", "Food and drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -553,12 +553,12 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipNZg7lMFgW-SmB--DmKKbh82GFGZnwWIKG8yFWl=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Beer", "Craft beer", "Bar", "Food"],
+      "tags": ["Beer", "Craft beer", "Bar", "Food and drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
     {
-      "name": "DOM | specialty coffee & food",
+      "name": "DOM | specialty coffee & Food and drink",
       "coordinates": {
         "latitude": 41.1561397,
         "longitude": -8.6188227
@@ -574,7 +574,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipN90Hcp-_IxhVvqdIHuiT7GH01RSH1VKUsYUbDm=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Coffee", "Restaurant", "Belorussian", "Food"],
+      "tags": ["Coffee", "Restaurant", "Belorussian", "Food and drink"],
       "medianRating": 4.5,
       "numberOfRatings": 1
     },
@@ -676,6 +676,230 @@
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipM_5-dJVxZQFl9HLYRAWHBmFVKwehc11INxqy27=w408-h544-k-no"],
       "reviews": [],
       "tags": ["Geek", "Board Games", "Gaming Table", "Books", "Comics", "Manga"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Certain Cafe",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/5ZDxufjD6Kb6F7wT9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry", "Breakfast"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Senzu Coffee Roasters",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/9hssXsY757ErbyAR7",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "von&vonnie microroasters",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/p5W3yiiHX34rvjTa7",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "7g Roaster",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/dChHvtdh3WaSY6ef9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "SO Coffee Roasters",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/tZLe38ne8QzASmE28",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "So Coffee Roasters - The Feeting Room",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/Wcm3DcVbymBB5UzH6",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "SO Coffee Roasters",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/shzWstW8aCpJBhn18",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Hakko",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/xZEAheMmfuihL4Bi8",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Brunch", "Breakfast"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "C'alma Coffee",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/HGSoH4JWU24jQtKQ9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "STORY | brunch & cocktails",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/bPH9Xx3UbfMR5H2U9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Brunch", "Cocktails"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Época Porto",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/PzUZf6gouRRPH7ha9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "MANNA ~ Food & Yoga",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/hBNhRhdpbV3weEzH7",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Breakfast", "Brunch", "Vegetarian"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Combi Coffee Roasters",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/WHBSqJPvUw61fLBP9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Café Passaporte",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/Z1N3ru5zULczDMMQA",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
       "medianRating": 0,
       "numberOfRatings": 0
     }
