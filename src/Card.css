@@ -1,0 +1,211 @@
+.Card, .MiniCard {
+  background-color: var(--primary-color, #646cff);
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px 12px;
+  width: 100%;
+  position: relative;
+
+  min-width: 250px;
+  min-height: 250px;
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  max-height: 250px;
+
+  overflow: hidden;
+}
+
+.MiniCard {
+  min-width: 200px;
+  min-height: 200px;
+  width: 100%;
+  height: 100%;
+  max-width: 236px;
+  max-height: 236px;
+
+  box-shadow: none;
+  padding: 0px;
+}
+
+.CardIndex, .MiniCardIndex {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 1;
+  /* text-decoration: underline; */
+}
+
+.CardName, .MiniCardName {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: max-content;
+  font-size: 1.6rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.MiniCardName {
+  width: calc(100% - 24px);
+  text-align: center;
+  padding: 0px 12px;
+  font-size: 1rem;
+}
+
+.CardBg, .MiniCardBg {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+.CardBgCover, .MiniCardBgCover {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.CardOverlay {
+  opacity: 0;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.CardOverlayContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.CardOverlay:hover {
+  opacity: 1;
+}
+
+.CardOverlayContentRating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CardOverlayContentRatingStars {
+  display: flex;
+  position: relative;
+  height: 24px; /* Adjust based on your design */
+  width: 120px; /* Adjust based on your design */
+  background-color: #3330; /* Background color for empty stars */
+  border-radius: 4px; /* Optional: for rounded corners */
+}
+
+.CardOverlayContentRatingStarsFilled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #555; /* Background color for filled stars */
+  border-radius: 4px 0 0 4px; /* Optional: for rounded corners on the left side */
+}
+
+.CardOverlayContentRatingStarsEmpty {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%; /* Ensures it covers the whole area */
+  background: url('public/star.svg') repeat-x; /* Path to your star outline image */
+  background-size: contain; /* Adjust the size of your stars */
+}
+
+.CardOverlayContentInfo {
+  display: flex;
+  gap: 12px;
+
+}
+
+.directions {
+  background-color: var(--primary-color, #646cff);
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  text-align: center;
+}
+
+.directions:hover {
+  background-color: transparent;
+  color: var(--primary-color, #646cff);
+}
+
+.MiniCardDirections {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  background-color: var(--primary-color, #646cff);
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  text-align: center;
+}
+
+.MiniCardDirections:hover {
+  background-color: transparent;
+  color: var(--primary-color, #646cff);
+}
+
+@media (prefers-color-scheme: light) {
+  .MiniCardDirections {
+    background-color: #ffffff;
+    color: var(--primary-color, #646cff);
+  }
+  .directions {
+    background-color: var(--primary-color, #646cff);
+    color: #ffffff;
+  }
+  .directions:hover {
+    background-color: #f9f9f9;
+    color: var(--primary-color, #646cff);
+  }
+}
+
+@media (max-width: 768px) {
+  .Card {
+    min-width: calc(100% - var(--app-padding-horizontal));
+    max-width: calc(100% - var(--app-padding-horizontal));
+  }
+}
