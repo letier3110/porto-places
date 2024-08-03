@@ -369,6 +369,7 @@
 .mapboxgl-popup-close-button, .poi-popup button {
   background-color: var(--primary-color, #646cff);
   color: #ffffff;
+  border-bottom-left-radius: 8px;
 }
 
 @media (prefers-color-scheme: light) {
