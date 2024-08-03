@@ -22,43 +22,52 @@ const MapWrapper: FC<MapProps> = ({ data }) => {
   )
 }
 
+interface MapFeature {
+  type: string;
+  properties: Record<string, string | number | object>;
+  geometry: {
+    type: string;
+    coordinates: [number, number];
+  }
+}
+
 const initialPoiData = {
   type: 'FeatureCollection',
   features: [
-    {
-      type: 'Feature',
-      properties: {
-        name: 'Clérigos Tower',
-        color: '#AC9733'
-      },
-      geometry: {
-        type: 'Point',
-        coordinates: [-8.6143, 41.1457]
-      }
-    },
-    {
-      type: 'Feature',
-      properties: {
-        name: 'Porto Cathedral',
-        color: '#33FF57'
-      },
-      geometry: {
-        type: 'Point',
-        coordinates: [-8.6111, 41.143]
-      }
-    },
-    {
-      type: 'Feature',
-      properties: {
-        name: 'São Bento Railway Station',
-        color: '#3357FF'
-      },
-      geometry: {
-        type: 'Point',
-        coordinates: [-8.6107, 41.1456]
-      }
-    }
-  ]
+    // {
+    //   type: 'Feature',
+    //   properties: {
+    //     name: 'Clérigos Tower',
+    //     color: '#AC9733'
+    //   },
+    //   geometry: {
+    //     type: 'Point',
+    //     coordinates: [-8.6143, 41.1457]
+    //   }
+    // },
+    // {
+    //   type: 'Feature',
+    //   properties: {
+    //     name: 'Porto Cathedral',
+    //     color: '#33FF57'
+    //   },
+    //   geometry: {
+    //     type: 'Point',
+    //     coordinates: [-8.6111, 41.143]
+    //   }
+    // },
+    // {
+    //   type: 'Feature',
+    //   properties: {
+    //     name: 'São Bento Railway Station',
+    //     color: '#3357FF'
+    //   },
+    //   geometry: {
+    //     type: 'Point',
+    //     coordinates: [-8.6107, 41.1456]
+    //   }
+    // }
+  ] as Array<MapFeature>
 }
 
 const Map: FC<MapProps> = ({ data }) => {
@@ -85,12 +94,12 @@ const Map: FC<MapProps> = ({ data }) => {
     return {
       ...initialPoiData,
       features: initialPoiData.features.concat(
-        data.map((card) => ({
+        data.map<MapFeature>((card) => ({
           type: 'Feature',
           properties: {
             ...card,
             name: card.name,
-            color: '#FF5733'
+            color: '#646cff'
           },
           geometry: {
             type: 'Point',
