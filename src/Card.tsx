@@ -3,23 +3,15 @@ import { DataEntry } from './interfaces'
 
 interface CardProps {
   cardData: DataEntry
-  index: number
+  index?: number
 }
 
 const Card: FC<CardProps> = ({ cardData, index }) => {
-  // const [openFilters, setOpenFilters] = useState(false)
-
-  // console.log(cardData)
-
-  // const handleToggleChips = () => {
-  //   setShowChips(!showChips)
-  // }
-
   return (
     <div className='Card'>
       {cardData.mediaUrl && cardData.mediaUrl.length > 0 && <img src={cardData.mediaUrl[0]} className='CardBg' />}
       {cardData.mediaUrl && cardData.mediaUrl.length > 0 && <div className='CardBgCover' />}
-      <div className='CardIndex'>{index}</div>
+      {index && (<div className='CardIndex'>{index}</div>)}
       <div className='CardName'>{cardData.name}</div>
       {/* <div>456</div> */}
       <div className='CardOverlay'>

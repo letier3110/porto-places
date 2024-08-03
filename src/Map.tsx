@@ -2,6 +2,8 @@ import mapboxgl from 'mapbox-gl'
 import { FC, useEffect, useMemo, useRef, useState } from 'react'
 import ErrorBoundary from './ErrorBoundary'
 import { DataEntry } from './interfaces'
+import MiniCard from './MiniCard'
+import { renderToString } from 'react-dom/server'
 // import access token from .env file from vite environment variables
 
 mapboxgl.accessToken = (import.meta.env.VITE_MAPBOX_ACCESS_TOKEN as string) || ''
@@ -63,40 +65,55 @@ const Map: FC<MapProps> = ({ data }) => {
   const mapContainer = useRef<HTMLDivElement>(null)
   const map = useRef<mapboxgl.Map | null>(null)
   const prevData = useRef<Array<DataEntry>>([])
-  const [lat, ] = useState(41.1579)
-  const [lng, ] = useState(-8.6291)
-  const [zoom, ] = useState(13)
+  const [lat] = useState(41.1579)
+  const [lng] = useState(-8.6291)
+  const [zoom] = useState(13)
+
+  const [mode, setMode] = useState<string>(
+    window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  )
+
+  useEffect(() => {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+      const colorScheme = event.matches ? 'dark' : 'light'
+      console.log(colorScheme) // "dark" or "light"
+      setMode(colorScheme)
+    })
+  }, [])
 
   const poiData = useMemo(() => {
     return {
       ...initialPoiData,
-      features: initialPoiData.features.concat(data.map((card) => ({
-        type: 'Feature',
-        properties: {
-          name: card.name,
-          color: '#FF5733'
-        },
-        geometry: {
-          type: 'Point',
-          coordinates: [card.coordinates.longitude, card.coordinates.latitude]
-        }
-      })))
-    };
+      features: initialPoiData.features.concat(
+        data.map((card) => ({
+          type: 'Feature',
+          properties: {
+            ...card,
+            name: card.name,
+            color: '#FF5733'
+          },
+          geometry: {
+            type: 'Point',
+            coordinates: [card.coordinates.longitude, card.coordinates.latitude]
+          }
+        }))
+      )
+    }
   }, [data])
   useEffect(() => {
     if (map.current) {
       // if map loaded && data changed
       if (prevData.current.every((card, index) => card === data[index]) && prevData.current.length === data.length) {
-        return;
+        return
       }
-      if(map.current.getSource('poi-source') && map.current.getLayer('poi-layer')) {
+      if (map.current.getSource('poi-source') && map.current.getLayer('poi-layer')) {
         prevData.current = data
-        map.current.removeLayer('poi-layer');
-        map.current.removeSource('poi-source');
+        map.current.removeLayer('poi-layer')
+        map.current.removeSource('poi-source')
         map.current.addSource('poi-source', {
           type: 'geojson',
           data: poiData
-        });
+        })
         map.current.addLayer({
           id: 'poi-layer',
           source: 'poi-source',
@@ -106,7 +123,6 @@ const Map: FC<MapProps> = ({ data }) => {
             'circle-color': ['get', 'color']
           }
 
-
           // type: 'fill-extrusion',
           // paint: {
           //   'fill-extrusion-color': ['get', 'color'],
@@ -115,15 +131,15 @@ const Map: FC<MapProps> = ({ data }) => {
           //   'fill-extrusion-opacity': 0.8
           // }
         })
-        return;
+        return
       }
-      return;
+      return
     } // initialize map only once
     // create map once, then "fly" to new locations
     map.current = new mapboxgl.Map({
       container: mapContainer.current as never, // container ID
       // traffic v12
-      style: 'mapbox://styles/mapbox/dark-v11', // style URL
+      style: `mapbox://styles/mapbox/${mode}-v11`, // style URL
       // center: [-8.6291, 41.1579], // Porto coordinates
       // zoom: 13,
       center: [lng, lat],
@@ -136,14 +152,21 @@ const Map: FC<MapProps> = ({ data }) => {
     if (map.current) {
       map.current.on('load', () => {
         if (!map.current) return
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+          if(!map.current) return;
+          const colorScheme = event.matches ? 'dark' : 'light'
+          map.current.setStyle(`mapbox://styles/mapbox/${colorScheme}-v11`)
+        })
         map.current.addControl(new mapboxgl.NavigationControl())
         map.current.addControl(new mapboxgl.FullscreenControl())
-        map.current.addControl(new mapboxgl.GeolocateControl({
-          positionOptions: {
-            enableHighAccuracy: true
-          },
-          trackUserLocation: true
-        }))
+        map.current.addControl(
+          new mapboxgl.GeolocateControl({
+            positionOptions: {
+              enableHighAccuracy: true
+            },
+            trackUserLocation: true
+          })
+        )
         prevData.current = data
         map.current.addSource('poi-source', {
           type: 'geojson',
@@ -172,7 +195,6 @@ const Map: FC<MapProps> = ({ data }) => {
             'circle-radius': 6,
             'circle-color': ['get', 'color']
           }
-
 
           // type: 'fill-extrusion',
           // paint: {
@@ -217,11 +239,37 @@ const Map: FC<MapProps> = ({ data }) => {
         map.current.on('click', 'poi-layer', (e) => {
           if (!map.current) return
           const coordinates = e.features[0].geometry.coordinates.slice()
-          const name = e.features[0].properties.name
+          const plainProperties = e.features[0].properties
+
+          // TODO: get from Minicard
+          const component = MiniCard({
+            cardData: {
+              name: plainProperties.name,
+              mediaUrl: JSON.parse(plainProperties.mediaUrl),
+              tags: JSON.parse(plainProperties.tags),
+              medianRating: plainProperties.medianRating,
+              numberOfRatings: plainProperties.numberOfRatings,
+              address: plainProperties.address,
+              menu: JSON.parse(plainProperties.menu),
+              hours: JSON.parse(plainProperties.menu),
+              reviews: JSON.parse(plainProperties.reviews),
+              gmaps: plainProperties.gmaps,
+              coordinates: {
+                latitude: coordinates[1],
+                longitude: coordinates[0]
+              }
+            }
+          })
+          const template = renderToString(component)
+
+          if (!template) return
 
           new mapboxgl.Popup({
             className: 'poi-popup'
-          }).setLngLat(coordinates).setHTML(`<h3>${name}</h3>`).addTo(map.current)
+          })
+            .setLngLat(coordinates)
+            .setHTML(template)
+            .addTo(map.current)
         })
 
         // Change cursor on POI hover
