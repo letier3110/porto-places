@@ -102,7 +102,18 @@
           "comment": "Good. Have to try the spicy one (€8.5)"
         }
       ],
-      "tags": ["Japanese", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Dine-in", "Takeaway", "Delivery", "Food and drink"],
+      "tags": [
+        "Japanese",
+        "Asian",
+        "Ramen",
+        "Bento",
+        "Porto",
+        "Cheap",
+        "Dine-in",
+        "Takeaway",
+        "Delivery",
+        "Food and drink"
+      ],
       "medianRating": 9.6,
       "numberOfRatings": 182
     },
@@ -138,7 +149,18 @@
           "comment": "Good. Have to try the spicy one (€8.5)"
         }
       ],
-      "tags": ["Korean", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Dine-in", "Takeaway", "Delivery", "Food and drink"],
+      "tags": [
+        "Korean",
+        "Asian",
+        "Ramen",
+        "Bento",
+        "Porto",
+        "Cheap",
+        "Dine-in",
+        "Takeaway",
+        "Delivery",
+        "Food and drink"
+      ],
       "medianRating": 9.2,
       "numberOfRatings": 229
     },
@@ -174,7 +196,18 @@
           "comment": "Good. Have to try the spicy one (€8.5)"
         }
       ],
-      "tags": ["Japanese", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Dine-in", "Takeaway", "Delivery", "Food and drink"],
+      "tags": [
+        "Japanese",
+        "Asian",
+        "Ramen",
+        "Bento",
+        "Porto",
+        "Cheap",
+        "Dine-in",
+        "Takeaway",
+        "Delivery",
+        "Food and drink"
+      ],
       "medianRating": 8.4,
       "numberOfRatings": 2164
     },
@@ -680,16 +713,16 @@
       "numberOfRatings": 0
     },
     {
-      "name": "Certain Cafe",
+      "name": "A Certain café",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 41.160563,
+        "longitude": -8.463593
       },
-      "address": "",
+      "address": "R. do Morgado de Mateus 107, 4000-333 Porto, Portugal",
       "hours": [],
       "gmaps": "https://maps.app.goo.gl/5ZDxufjD6Kb6F7wT9",
       "menu": [],
-      "mediaUrl": [],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipMQN9z-tMRa-6_5GzC8QhsTDe7T1J20xA7vYQ1u=w408-h544-k-no"],
       "reviews": [],
       "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry", "Breakfast"],
       "medianRating": 0,
@@ -698,14 +731,14 @@
     {
       "name": "Senzu Coffee Roasters",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 41.160563,
+        "longitude": -8.463593
       },
-      "address": "",
+      "address": "RUA DUQUE LOULÉ, 201 PORTO 4000-325",
       "hours": [],
       "gmaps": "https://maps.app.goo.gl/9hssXsY757ErbyAR7",
       "menu": [],
-      "mediaUrl": [],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipNAwc2LKqGEVPtN1_euUpQDo6m44RK4wvY9rCv8=w408-h544-k-no"],
       "reviews": [],
       "tags": ["Food and drink", "Coffee", "Specialty coffee"],
       "medianRating": 0,
@@ -714,14 +747,14 @@
     {
       "name": "von&vonnie microroasters",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 41.1472013,
+        "longitude": -8.5892769
       },
-      "address": "",
+      "address": "Rua do Heroísmo 10, 4300-252 Porto",
       "hours": [],
       "gmaps": "https://maps.app.goo.gl/p5W3yiiHX34rvjTa7",
       "menu": [],
-      "mediaUrl": [],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOb52CfeTkL5sAENgLrSM8M3qo0I0_vWDn9erPQ=w408-h544-k-no"],
       "reviews": [],
       "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
@@ -730,14 +763,14 @@
     {
       "name": "7g Roaster",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 41.13695,
+        "longitude": -8.6139558
       },
-      "address": "",
+      "address": "R. de França 52, 4400-174 Vila Nova de Gaia",
       "hours": [],
       "gmaps": "https://maps.app.goo.gl/dChHvtdh3WaSY6ef9",
       "menu": [],
-      "mediaUrl": [],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOMIMWtGksJi5QbSQ2T5BHQwyMNTL6cYQQWTd8r=w408-h544-k-no"],
       "reviews": [],
       "tags": ["Food and drink", "Coffee", "Specialty coffee"],
       "medianRating": 0,
@@ -762,14 +795,14 @@
     {
       "name": "So Coffee Roasters - The Feeting Room",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 41.13695,
+        "longitude": -8.61402
       },
-      "address": "",
+      "address": "R. de Sá de Noronha 119, 4050-528 Porto",
       "hours": [],
       "gmaps": "https://maps.app.goo.gl/Wcm3DcVbymBB5UzH6",
       "menu": [],
-      "mediaUrl": [],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipMrIlRrJhzhi3TAfc9EGw9HMB6Jd3ORu0ke0qxN=w408-h544-k-no"],
       "reviews": [],
       "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
@@ -778,14 +811,14 @@
     {
       "name": "SO Coffee Roasters",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 41.1460503,
+        "longitude": -8.6294343
       },
-      "address": "",
+      "address": "Rua da Restauração 455, 4050-023 Porto",
       "hours": [],
       "gmaps": "https://maps.app.goo.gl/shzWstW8aCpJBhn18",
       "menu": [],
-      "mediaUrl": [],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipO-8Sdjf_tUm3x0q9oGDzAN2erQmEI7u70ywzDe=w408-h544-k-no"],
       "reviews": [],
       "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
@@ -794,14 +827,14 @@
     {
       "name": "Hakko",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": "41.1513163",
+        "longitude": "-8.621197"
       },
-      "address": "",
+      "address": "Rua do Rosário 313, 4050-522 Porto",
       "hours": [],
       "gmaps": "https://maps.app.goo.gl/xZEAheMmfuihL4Bi8",
       "menu": [],
-      "mediaUrl": [],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipO-fA4hCmizlJdk7LXWNcEPWLa_OX6-b3hHCXJK=w408-h544-k-no"],
       "reviews": [],
       "tags": ["Food and drink", "Coffee", "Specialty coffee", "Brunch", "Breakfast"],
       "medianRating": 0,
@@ -809,15 +842,16 @@
     },
     {
       "name": "C'alma Coffee",
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipNpZvevRSB64dyrOwBdX-PwhGg30wIsnHs0HJot=w408-h544-k-no"],
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": "41.1495102",
+        "longitude": "-8.6074697"
       },
-      "address": "",
+
+      "address": "R. de Sá da Bandeira 376, 4000-429 Porto",
       "hours": [],
       "gmaps": "https://maps.app.goo.gl/HGSoH4JWU24jQtKQ9",
       "menu": [],
-      "mediaUrl": [],
       "reviews": [],
       "tags": ["Food and drink", "Coffee", "Specialty coffee"],
       "medianRating": 0,
@@ -825,15 +859,15 @@
     },
     {
       "name": "STORY | brunch & cocktails",
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPqG_CBRMl92rm3fHMBYrwfII1a-7DAGfe11vKc=w408-h544-k-no"],
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": "41.1503242",
+        "longitude": "-8.6145703"
       },
-      "address": "",
+      "address": "Rua dos Mártires da Liberdade 30, 4050-358 Porto",
       "hours": [],
       "gmaps": "https://maps.app.goo.gl/bPH9Xx3UbfMR5H2U9",
       "menu": [],
-      "mediaUrl": [],
       "reviews": [],
       "tags": ["Food and drink", "Coffee", "Specialty coffee", "Brunch", "Cocktails"],
       "medianRating": 0,
@@ -841,15 +875,15 @@
     },
     {
       "name": "Época Porto",
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipM_sbKqRL8YSmOzsHe4tx23fO2GzNvBWSrxjQls=w408-h544-k-no"],
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": "41.1478809",
+        "longitude": "-8.6205277"
       },
-      "address": "",
+      "address": "Rua do Rosário 22, 4050-522 Porto",
       "hours": [],
       "gmaps": "https://maps.app.goo.gl/PzUZf6gouRRPH7ha9",
       "menu": [],
-      "mediaUrl": [],
       "reviews": [],
       "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
@@ -857,15 +891,15 @@
     },
     {
       "name": "MANNA ~ Food & Yoga",
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPW939VGHWfwtfWmorGL8-fCF1H98Tb8qj7gF_Q=w408-h544-k-no"],
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": "41.1499649",
+        "longitude": "-8.6140702"
       },
-      "address": "",
+      "address": "Rua da Conceição 60, 4050-213 Porto",
       "hours": [],
       "gmaps": "https://maps.app.goo.gl/hBNhRhdpbV3weEzH7",
       "menu": [],
-      "mediaUrl": [],
       "reviews": [],
       "tags": ["Food and drink", "Coffee", "Specialty coffee", "Breakfast", "Brunch", "Vegetarian"],
       "medianRating": 0,
@@ -873,15 +907,15 @@
     },
     {
       "name": "Combi Coffee Roasters",
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOY_iOwfapLslzgQhv4GKkH4EvBkSgssew-_u29=w408-h544-k-no"],
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": "41.1465804",
+        "longitude": "-8.6014168"
       },
-      "address": "",
+      "address": "R. do Morgado de Mateus nº29, 4000-334 Porto",
       "hours": [],
       "gmaps": "https://maps.app.goo.gl/WHBSqJPvUw61fLBP9",
       "menu": [],
-      "mediaUrl": [],
       "reviews": [],
       "tags": ["Food and drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
       "medianRating": 0,
@@ -893,7 +927,7 @@
         "latitude": 0,
         "longitude": 0
       },
-      "address": "",
+      "address": "R. de Santo Ildefonso 491, Porto",
       "hours": [],
       "gmaps": "https://maps.app.goo.gl/Z1N3ru5zULczDMMQA",
       "menu": [],

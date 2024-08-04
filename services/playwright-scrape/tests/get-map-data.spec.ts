@@ -117,13 +117,17 @@ test('collect restaurant data', async ({ page }) => {
       hoursLocator.first().click();
       const hoursTextLocator = page.getByLabel('Hours');
       if(hoursTextLocator) {
-        const hoursText: string | null = await hoursTextLocator.textContent({ timeout: 3000 });
-        if(hoursText && typeof hoursText === 'string') {
-          // Open · Closes 00:30Days of weekOpen hoursThursday18:00 - 00:30Friday18:00 - 00:30Saturday18:00 - 00:30Sunday18:00 - 00:30MondayClosedTuesdayClosedWednesday18:00 - 00:30
-          restaurantData.hours = hoursText.split("Open hours")[1].split(/(?<=\d{2}:\d{2})/).map((line) => line.trim()).map(x => ({
-            open: x.split(' - ')[0],
-            close: x.split(' - ')[1]
-          }));
+        try {
+          const hoursText: string | null = await hoursTextLocator.textContent({ timeout: 2000 });
+          if(hoursText && typeof hoursText === 'string') {
+            // Open · Closes 00:30Days of weekOpen hoursThursday18:00 - 00:30Friday18:00 - 00:30Saturday18:00 - 00:30Sunday18:00 - 00:30MondayClosedTuesdayClosedWednesday18:00 - 00:30
+            restaurantData.hours = hoursText.split("Open hours")[1].split(/(?<=\d{2}:\d{2})/).map((line) => line.trim()).map(x => ({
+              open: x.split(' - ')[0],
+              close: x.split(' - ')[1]
+            }));
+          }
+        } catch (error) {
+          console.error('Error getting hours', error);
         }
       }
     }
