@@ -1,30 +1,61 @@
 {
   "backend": [
     {
-      "id":"2",
-      "name":"Setup Discord-DM Bot",
+      "id": "2",
+      "name": "Setup Discord-DM Bot",
       "description": "Denojs server, which will accept user text messages from the form and will send them as direct messages to admin user through Discord"
+    },
+    {
+      "id": "3",
+      "name": "Custom Mini Backend for Serving Data from Database",
+      "description": "Create a custom backend to fetch and serve data from PostgreSQL database"
     }
   ],
   "infrastructure": [
     {
-      "id":"2",
-      "name":"Deploy Deno Server"
+      "id": "1",
+      "name": "Migrate to Vercel",
+      "description": "Deploy the application on Vercel for better scalability and ease of deployment"
     },
     {
-      "name":"Setup GitHub action to automatically scrape data from maps and push them to repo"
+      "id": "2",
+      "name": "Deploy Deno Server"
+    },
+    {
+      "name": "Setup GitHub action to automatically scrape data from maps and push them to repo"
     }
   ],
   "frontend": [
     {
-      "id":"2",
-      "name":"Create a form to accept user text messages",
+      "id": "1",
+      "name": "Migrate to Next.js",
+      "description": "Move the current frontend to use Next.js for better performance and SEO"
+    },
+    {
+      "id": "2",
+      "name": "Create a form to accept user text messages",
       "description": "Copy base message submit form from LLM-chat"
     },
     {
-      "optional":true,
-      "name":"Visualisation of roadmap"
+      "id": "4",
+      "name": "Add AntD",
+      "description": "Integrate Ant Design components into the frontend"
+    },
+    {
+      "optional": true,
+      "name": "Visualization of Roadmap"
+    },
+    {
+      "optional": true,
+      "name": "Add Tailwind",
+      "description": "Integrate Tailwind CSS into the frontend as an alternative to Ant Design"
     }
   ],
-  "dataOps": []
+  "dataOps": [
+    {
+      "id": "2",
+      "name": "Move Data to PostgreSQL from JSON",
+      "description": "Migrate existing JSON data to a PostgreSQL database for better data management"
+    }
+  ]
 }
