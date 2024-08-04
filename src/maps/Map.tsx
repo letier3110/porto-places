@@ -1,10 +1,10 @@
 import mapboxgl from 'mapbox-gl'
 import { FC, useEffect, useMemo, useRef, useState } from 'react'
-import ErrorBoundary from './ErrorBoundary'
-import { DataEntry } from './interfaces'
-import MiniCard from './MiniCard'
 import { renderToString } from 'react-dom/server'
-// import access token from .env file from vite environment variables
+import ErrorBoundary from '../app/ErrorBoundary'
+import { DataEntry } from '../lib/interfaces'
+import './mapbox.css'
+import MiniCard from './MiniCard'
 
 mapboxgl.accessToken = (import.meta.env.VITE_MAPBOX_ACCESS_TOKEN as string) || ''
 

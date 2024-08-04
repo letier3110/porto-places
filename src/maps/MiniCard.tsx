@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { DataEntry } from './interfaces'
+import { DataEntry } from '../lib/interfaces'
 
 interface MiniCardProps {
   cardData: DataEntry

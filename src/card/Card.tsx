@@ -1,5 +1,6 @@
 import { FC } from 'react'
-import { DataEntry } from './interfaces'
+import './Card.css'
+import { DataEntry } from '../lib/interfaces'
 
 interface CardProps {
   cardData: DataEntry

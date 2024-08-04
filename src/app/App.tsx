@@ -1,13 +1,13 @@
 import { FC, useState } from 'react'
 import './App.css'
-import './Card.css'
-import './mapbox.css'
-import Card from './Card'
-import CardsData from '../public/data.json'
-import PlaceModeData from '../public/mode.json'
-import tagGroups from '../public/filters.json'
-import { DataEntry } from './interfaces'
-import Map from './Map'
+import Card from '../card/Card'
+import CardsData from '../../public/data.json'
+import PlaceModeData from '../../public/mode.json'
+import tagGroups from '../../public/filters.json'
+import { DataEntry } from '../lib/interfaces'
+import Map from '../maps/Map'
+import { firebaseApp } from '../firebase/firebase'
+
 
 const data = CardsData as { data: Array<DataEntry> }
 const cardsData = data.data
@@ -17,6 +17,12 @@ interface IFilter {
   tags: string[]
   sort: string
 }
+
+const one = 1
+let two = 0;
+two = 2;
+
+console.log(one === two-one ? 'yes' : firebaseApp);
 
 const App: FC = () => {
   // const [openFilters, setOpenFilters] = useState(false)
