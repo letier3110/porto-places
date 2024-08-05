@@ -712,6 +712,62 @@
       "medianRating": 0,
       "numberOfRatings": 0
     },
+
+    {
+      "name": "Vertical Coworking Bolhão",
+      "coordinates": {
+        "latitude": 41.1509578,
+        "longitude": -8.6046453
+      },
+      "address": "R. Guedes de Azevedo 131, 4000-272 Porto",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/byUxrwGgxh8GLVtc7",
+      "menu": [],
+      "mediaUrl": [
+        "https://lh5.googleusercontent.com/p/AF1QipNNz_650mjiUFNf9hzebVCJMqnFND0WtZu0yyCQ=w408-h544-k-no"
+      ],
+      "reviews": [],
+      "tags": ["Work", "Coworking", "Office", "Remote work"],
+      "medianRating": 5,
+      "numberOfRatings": 5
+    },
+    {
+      "name": "Vertical Coworking Firmeza",
+      "coordinates": {
+        "latitude": 41.1522889,
+        "longitude": -8.6067264
+      },
+      "address": "R. da Firmeza 369, 4000-225 Porto",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/geiuZEjsWgocMP4U9",
+      "menu": [],
+      "mediaUrl": [
+        "https://lh5.googleusercontent.com/p/AF1QipP4wjrnsXSbjRt7fOzgIpg204hQ84aTE0fekCRZ=w408-h544-k-no"
+      ],
+      "reviews": [],
+      "tags": ["Work", "Coworking", "Office", "Remote work"],
+      "medianRating": 5,
+      "numberOfRatings": 5
+    },
+    {
+      "name": "Selina Navis Coworking",
+      "coordinates": {
+          "latitude": 41.1497365,
+          "longitude": -8.6140901
+      },
+      "address": "R. de José Falcão 199, 4050-215 Porto",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/AeWprgSPNLyr8P8J9",
+      "menu": [],
+      "mediaUrl": [
+          "https://lh5.googleusercontent.com/p/AF1QipPCO93Lh1Wv6mMtPUUvfWfnqpg06uNlt9Dmawib=w408-h544-k-no"
+      ],
+      "reviews": [],
+      "tags": ["Work", "Coworking", "Office", "Remote work"],
+      "medianRating": 5,
+      "numberOfRatings": 5
+    },
+
     {
       "name": "A Certain café",
       "coordinates": {
@@ -827,8 +883,8 @@
     {
       "name": "Hakko",
       "coordinates": {
-        "latitude": "41.1513163",
-        "longitude": "-8.621197"
+        "latitude": 41.1513163,
+        "longitude": -8.621197
       },
       "address": "Rua do Rosário 313, 4050-522 Porto",
       "hours": [],
@@ -844,8 +900,8 @@
       "name": "C'alma Coffee",
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipNpZvevRSB64dyrOwBdX-PwhGg30wIsnHs0HJot=w408-h544-k-no"],
       "coordinates": {
-        "latitude": "41.1495102",
-        "longitude": "-8.6074697"
+        "latitude": 41.1495102,
+        "longitude": -8.6074697
       },
 
       "address": "R. de Sá da Bandeira 376, 4000-429 Porto",
@@ -861,8 +917,8 @@
       "name": "STORY | brunch & cocktails",
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPqG_CBRMl92rm3fHMBYrwfII1a-7DAGfe11vKc=w408-h544-k-no"],
       "coordinates": {
-        "latitude": "41.1503242",
-        "longitude": "-8.6145703"
+        "latitude": 41.1503242,
+        "longitude": -8.6145703
       },
       "address": "Rua dos Mártires da Liberdade 30, 4050-358 Porto",
       "hours": [],
@@ -877,8 +933,8 @@
       "name": "Época Porto",
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipM_sbKqRL8YSmOzsHe4tx23fO2GzNvBWSrxjQls=w408-h544-k-no"],
       "coordinates": {
-        "latitude": "41.1478809",
-        "longitude": "-8.6205277"
+        "latitude": 41.1478809,
+        "longitude": -8.6205277
       },
       "address": "Rua do Rosário 22, 4050-522 Porto",
       "hours": [],
@@ -893,8 +949,8 @@
       "name": "MANNA ~ Food & Yoga",
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPW939VGHWfwtfWmorGL8-fCF1H98Tb8qj7gF_Q=w408-h544-k-no"],
       "coordinates": {
-        "latitude": "41.1499649",
-        "longitude": "-8.6140702"
+        "latitude": 41.1499649,
+        "longitude": -8.6140702
       },
       "address": "Rua da Conceição 60, 4050-213 Porto",
       "hours": [],
@@ -909,8 +965,8 @@
       "name": "Combi Coffee Roasters",
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOY_iOwfapLslzgQhv4GKkH4EvBkSgssew-_u29=w408-h544-k-no"],
       "coordinates": {
-        "latitude": "41.1465804",
-        "longitude": "-8.6014168"
+        "latitude": 41.1465804,
+        "longitude": -8.6014168
       },
       "address": "R. do Morgado de Mateus nº29, 4000-334 Porto",
       "hours": [],
