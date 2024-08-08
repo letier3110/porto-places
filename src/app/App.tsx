@@ -8,7 +8,6 @@ import { DataEntry } from '../lib/interfaces'
 import Map from '../maps/Map'
 import { firebaseApp } from '../firebase/firebase'
 
-
 const data = CardsData as { data: Array<DataEntry> }
 const cardsData = data.data
 
@@ -19,17 +18,24 @@ interface IFilter {
 }
 
 const one = 1
-let two = 0;
-two = 2;
+let two = 0
+two = 2
 
-console.log(one === two-one ? 'yes' : firebaseApp);
+console.log(one === two - one ? 'yes' : firebaseApp)
 
 const App: FC = () => {
-  // const [openFilters, setOpenFilters] = useState(false)
+  // get current url hash and make normal string without %20 globally
+  const shortFilter = window.location.hash.replace('#', '').replace(/%20/g, ' ')
   const [mapMode, setMapMode] = useState(false)
   const [showChips, setShowChips] = useState(false)
   const [searchInFilters, setSearchInFilters] = useState('')
-  const [mode, setMode] = useState(PlaceModeData[0].name)
+  const [mode, setMode] = useState(
+    shortFilter ? PlaceModeData.find((x) => x.value.toLocaleString().toLowerCase().includes(shortFilter.toLowerCase()))?.name ?? PlaceModeData[0].value : PlaceModeData[0].value
+  )
+  console.log(shortFilter,  PlaceModeData.find((x) => {
+    console.log(x.value.toLocaleString().toLowerCase(), ' : ', shortFilter.toLowerCase())
+    return x.value.toLocaleString().toLowerCase().includes(shortFilter.toLowerCase());
+  }), PlaceModeData.find((x) => x.value.toLocaleString().toLowerCase().includes(shortFilter.toLowerCase()))?.value, PlaceModeData[0].value, mode)
   const [filters, setFilters] = useState<IFilter>({
     search: '',
     tags: [],
@@ -53,8 +59,10 @@ const App: FC = () => {
   }
 
   const handleToggleMode = () => {
-    const nextModeIndex = PlaceModeData.findIndex((placeMode) => placeMode.name === mode) + 1;
+    const nextModeIndex = PlaceModeData.findIndex((placeMode) => placeMode.name === mode) + 1
+    console.log(PlaceModeData[nextModeIndex % PlaceModeData.length])
     setMode(PlaceModeData[nextModeIndex % PlaceModeData.length].name)
+    window.location.hash = '#' + PlaceModeData[nextModeIndex % PlaceModeData.length].value
   }
 
   const handleToggleMapMode = () => {
@@ -107,62 +115,69 @@ const App: FC = () => {
     }
   }
 
-  const Modes = (<button className='filters' onClick={handleToggleMode}>
-    {mode}
-  </button>)
+  const Modes = (
+    <button className='filters' onClick={handleToggleMode}>
+      {mode}
+    </button>
+  )
 
-  const Filters = (<div className='ChipsFather relative'>
-    <input
-      type='text'
-      onFocus={enableChips}
-      placeholder='Search'
-      value={searchInFilters}
-      onKeyDown={(e) => {
-        if (e.key === 'Enter') {
-          handleSubmitSearchInFilters()
-        }
-      }}
-      onClick={(e) => e.stopPropagation()}
-      onChange={(e) => setSearchInFilters(e.target.value)}
-      onSubmit={handleSubmitSearchInFilters}
-    />
-    {showChips && (
-      <div className='ChipsModal'>
-        {filteredTagItems.map((group, index) => (
-          <div className='filterGroup' key={index}>
-            <div className='filterName'>{group.groupName}</div>
-            <div className='filterValues'>
-              {group.values.map((tag, index) => (
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation()
-                    handleAddFilterTag(tag.value)
-                  }}
-                  key={index}
-                >
-                  {tag.name}
-                </button>
-              ))}
+  const Filters = (
+    <div className='ChipsFather relative'>
+      <input
+        type='text'
+        onFocus={enableChips}
+        placeholder='Search'
+        value={searchInFilters}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') {
+            handleSubmitSearchInFilters()
+          }
+        }}
+        onClick={(e) => e.stopPropagation()}
+        onChange={(e) => setSearchInFilters(e.target.value)}
+        onSubmit={handleSubmitSearchInFilters}
+      />
+      {showChips && (
+        <div className='ChipsModal'>
+          {filteredTagItems.map((group, index) => (
+            <div className='filterGroup' key={index}>
+              <div className='filterName'>{group.groupName}</div>
+              <div className='filterValues'>
+                {group.values.map((tag, index) => (
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      handleAddFilterTag(tag.value)
+                    }}
+                    key={index}
+                  >
+                    {tag.name}
+                  </button>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    )}
-  </div>)
+          ))}
+        </div>
+      )}
+    </div>
+  )
 
-  const ViewMode = (<div className='ViewMode'>
-    <button className='ViewModeBtn' onClick={handleToggleMapMode}>{mapMode ? 'Map View' : 'Grid View'}</button>
-  </div>)
+  const ViewMode = (
+    <div className='ViewMode'>
+      <button className='ViewModeBtn' onClick={handleToggleMapMode}>
+        {mapMode ? 'Map View' : 'Grid View'}
+      </button>
+    </div>
+  )
 
-// suggest your favorite place and add emoji
   const Mailto = (
     <div className='MailLink'>
       <button>
-      <a className='btn' href={`mailto:${(import.meta.env.VITE_EMAIL as string) || ''}?subject=Cool place in Porto`}>
-        <span>💌</span>
-        <span>Send us your favorite place</span>
-        <span>💌</span>
-      </a>
+        <a className='btn' href={`mailto:${(import.meta.env.VITE_EMAIL as string) || ''}?subject=Cool place in Porto`}>
+          <span>💌</span>
+          <span>Send us your favorite place</span>
+          <span>💌</span>
+        </a>
       </button>
     </div>
   )

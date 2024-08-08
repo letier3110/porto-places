@@ -155,7 +155,7 @@
       "menu": [],
       "mediaUrl": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry", "Breakfast"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry", "Breakfast"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -171,7 +171,7 @@
       "menu": [],
       "mediaUrl": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -187,7 +187,7 @@
       "menu": [],
       "mediaUrl": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -203,7 +203,7 @@
       "menu": [],
       "mediaUrl": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -219,7 +219,7 @@
       "menu": [],
       "mediaUrl": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -235,7 +235,7 @@
       "menu": [],
       "mediaUrl": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -251,7 +251,7 @@
       "menu": [],
       "mediaUrl": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -267,7 +267,7 @@
       "menu": [],
       "mediaUrl": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Brunch", "Breakfast"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Brunch", "Breakfast"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -283,7 +283,7 @@
       "menu": [],
       "mediaUrl": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -299,7 +299,7 @@
       "menu": [],
       "mediaUrl": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Brunch", "Cocktails"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Brunch", "Cocktails"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -315,7 +315,7 @@
       "menu": [],
       "mediaUrl": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -331,7 +331,7 @@
       "menu": [],
       "mediaUrl": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Breakfast", "Brunch", "Vegetarian"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Breakfast", "Brunch", "Vegetarian"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -347,7 +347,7 @@
       "menu": [],
       "mediaUrl": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -363,7 +363,7 @@
       "menu": [],
       "mediaUrl": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
       "medianRating": 0,
       "numberOfRatings": 0
     }

@@ -64,7 +64,7 @@
         "comment": "Good. Have to try the spicy one (€8.5)"
       }
     ],
-    "tags": ["Japanese", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Food and drink"],
+    "tags": ["Japanese", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Food+Drink"],
     "medianRating": 9.6,
     "numberOfRatings": 182
   },
@@ -112,7 +112,7 @@
         "Dine-in",
         "Takeaway",
         "Delivery",
-        "Food and drink"
+        "Food+Drink"
       ],
       "medianRating": 9.6,
       "numberOfRatings": 182
@@ -159,7 +159,7 @@
         "Dine-in",
         "Takeaway",
         "Delivery",
-        "Food and drink"
+        "Food+Drink"
       ],
       "medianRating": 9.2,
       "numberOfRatings": 229
@@ -206,7 +206,7 @@
         "Dine-in",
         "Takeaway",
         "Delivery",
-        "Food and drink"
+        "Food+Drink"
       ],
       "medianRating": 8.4,
       "numberOfRatings": 2164
@@ -239,7 +239,7 @@
           "comment": "Good. Have to try the spicy one (€8.5)"
         }
       ],
-      "tags": ["Portuguese", "Burger", "Porto", "Cheap", "Takeaway", "Delivery", "Food and drink"],
+      "tags": ["Portuguese", "Burger", "Porto", "Cheap", "Takeaway", "Delivery", "Food+Drink"],
       "medianRating": 9.4,
       "numberOfRatings": 1971
     },
@@ -255,7 +255,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPJ-9VE-ZZT-_8wEZrWgQmoZXg9SHxU1cYMGGjN=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Brazilian", "Burger", "Food and drink"],
+      "tags": ["Brazilian", "Burger", "Food+Drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -271,7 +271,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOWFmVU3erS15zzs_uCFC2HwNmImodkknH72kwk=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Beer", "Craft beer", "Bar", "Food and drink"],
+      "tags": ["Beer", "Craft beer", "Bar", "Food+Drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -287,7 +287,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipMBanzANYjLrZMN6N5h8rLW5jk_5nEuisq1oDga=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Vietmamese", "Cafe", "Food and drink"],
+      "tags": ["Vietmamese", "Cafe", "Food+Drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -340,7 +340,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPjV0czoAbrXMctjuyNAHCb3JbrTLyAuLQw04wu=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Cocktails", "Wine", "Food and drink"],
+      "tags": ["Cocktails", "Wine", "Food+Drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -399,7 +399,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOfM4hD8yG0zt8ukvw4-PnFHHEH1A9AdLFAqihc=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Beer", "Local", "Sports bar", "Bar", "Food and drink"],
+      "tags": ["Beer", "Local", "Sports bar", "Bar", "Food+Drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -452,7 +452,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipNDpBrf_3ROqz1RPztVi6RAq1SFdLrDcDzi7dYv=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Cocktails", "Bar", "Food and drink"],
+      "tags": ["Cocktails", "Bar", "Food+Drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -511,7 +511,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPgdSgiPAbbCYYVA_etMpNBgkflNdThhUydCZU=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Vietnamese", "Cafe", "Food and drink"],
+      "tags": ["Vietnamese", "Cafe", "Food+Drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -570,7 +570,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipNFKKeBxGPu593vP-cmZ2_R29kFNSCtJfAscuas=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Beer", "Pub", "Sports bar", "Food and drink"],
+      "tags": ["Beer", "Pub", "Sports bar", "Food+Drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -586,12 +586,12 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipNZg7lMFgW-SmB--DmKKbh82GFGZnwWIKG8yFWl=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Beer", "Craft beer", "Bar", "Food and drink"],
+      "tags": ["Beer", "Craft beer", "Bar", "Food+Drink"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
     {
-      "name": "DOM | specialty coffee & Food and drink",
+      "name": "DOM | specialty coffee & Food+Drink",
       "coordinates": {
         "latitude": 41.1561397,
         "longitude": -8.6188227
@@ -607,7 +607,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipN90Hcp-_IxhVvqdIHuiT7GH01RSH1VKUsYUbDm=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Coffee", "Restaurant", "Belorussian", "Food and drink"],
+      "tags": ["Coffee", "Restaurant", "Belorussian", "Food+Drink"],
       "medianRating": 4.5,
       "numberOfRatings": 1
     },
@@ -723,9 +723,7 @@
       "hours": [],
       "gmaps": "https://maps.app.goo.gl/byUxrwGgxh8GLVtc7",
       "menu": [],
-      "mediaUrl": [
-        "https://lh5.googleusercontent.com/p/AF1QipNNz_650mjiUFNf9hzebVCJMqnFND0WtZu0yyCQ=w408-h544-k-no"
-      ],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipNNz_650mjiUFNf9hzebVCJMqnFND0WtZu0yyCQ=w408-h544-k-no"],
       "reviews": [],
       "tags": ["Work", "Coworking", "Office", "Remote work"],
       "medianRating": 5,
@@ -741,9 +739,7 @@
       "hours": [],
       "gmaps": "https://maps.app.goo.gl/geiuZEjsWgocMP4U9",
       "menu": [],
-      "mediaUrl": [
-        "https://lh5.googleusercontent.com/p/AF1QipP4wjrnsXSbjRt7fOzgIpg204hQ84aTE0fekCRZ=w408-h544-k-no"
-      ],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipP4wjrnsXSbjRt7fOzgIpg204hQ84aTE0fekCRZ=w408-h544-k-no"],
       "reviews": [],
       "tags": ["Work", "Coworking", "Office", "Remote work"],
       "medianRating": 5,
@@ -752,20 +748,99 @@
     {
       "name": "Selina Navis Coworking",
       "coordinates": {
-          "latitude": 41.1497365,
-          "longitude": -8.6140901
+        "latitude": 41.1497365,
+        "longitude": -8.6140901
       },
       "address": "R. de José Falcão 199, 4050-215 Porto",
       "hours": [],
       "gmaps": "https://maps.app.goo.gl/AeWprgSPNLyr8P8J9",
       "menu": [],
-      "mediaUrl": [
-          "https://lh5.googleusercontent.com/p/AF1QipPCO93Lh1Wv6mMtPUUvfWfnqpg06uNlt9Dmawib=w408-h544-k-no"
-      ],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPCO93Lh1Wv6mMtPUUvfWfnqpg06uNlt9Dmawib=w408-h544-k-no"],
       "reviews": [],
       "tags": ["Work", "Coworking", "Office", "Remote work"],
       "medianRating": 5,
       "numberOfRatings": 5
+    },
+
+    {
+      "name": "Hard Club",
+      "coordinates": {
+        "latitude": 41.1417399,
+        "longitude": -8.6151203
+      },
+      "address": "Mercado Ferreira Borges, 4050-252 Porto",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/RabqpfjvicAksFL26",
+      "menu": [],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipN0E7f3LQMwSOUzIWtYUp92cAlHySYWUAEim4EH=w408-h544-k-no"],
+      "reviews": [],
+      "tags": ["concert", "club", "bar", "hard rock"],
+      "medianRating": 4.4,
+      "numberOfRatings": 3596
+    },
+    {
+      "name": "Barracuda Rock Club",
+      "coordinates": {
+        "latitude": 41.1459659,
+        "longitude": -8.6096307
+      },
+      "address": "R. da Madeira 186, 4000-433 Porto",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/dBuJoWDuDRCen5Vu9",
+      "menu": [],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipNirraahmVDaPtNI-tAM-j0OjrpCUK9XrTGjDvv=w408-h544-k-no"],
+      "reviews": [],
+      "tags": ["concert", "rock club"],
+      "medianRating": 4.7,
+      "numberOfRatings": 64
+    },
+    {
+      "name": "FERRO BAR",
+      "coordinates": {
+        "latitude": 41.1458308,
+        "longitude": -8.6084425
+      },
+      "address": "R. da Madeira 84, 4000-427 Porto",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/wWd7HHSBnq8po7oa6",
+      "menu": [],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipNggLhLUyX3zPCuqU2YLIpoCCnnYpyAMQm0Qh-O=w408-h544-k-no"],
+      "reviews": [],
+      "tags": ["bar", "concert"],
+      "medianRating": 4.4,
+      "numberOfRatings": 951
+    },
+    {
+      "name": "Mary Spot Vintage Bar",
+      "coordinates": {
+        "latitude": 41.1826957,
+        "longitude": -8.6855115
+      },
+      "address": "R. Ló Ferreira 125, 4450-000 Matosinhos",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/8Xaz5SbUtzNhQHiW9",
+      "menu": [],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPzoqq4LfJVpubLU8zoKTjlBk1X75rmuwJdq7g-=w408-h544-k-no"],
+      "reviews": [],
+      "tags": ["bar", "vintage", "concert"],
+      "medianRating": 4.5,
+      "numberOfRatings": 955
+    },
+    {
+      "name": "Socorro",
+      "coordinates": {
+        "latitude": 41.1522006,
+        "longitude": -8.6060014
+      },
+      "address": "R. Guedes de Azevedo 44, 4000-271 Porto",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/5oWjNvoQm2Hyen3m7",
+      "menu": [],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOMHZHP8C-lxW7xjiQ6pZVH4-dPgvbMjNSY4x7A=w408-h544-k-no"],
+      "reviews": [],
+      "tags": ["bar", "concert", "vintage"],
+      "numberOfRatings": 66,
+      "medianRating": "5.0"
     },
 
     {
@@ -780,7 +855,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipMQN9z-tMRa-6_5GzC8QhsTDe7T1J20xA7vYQ1u=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry", "Breakfast"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry", "Breakfast"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -796,7 +871,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipNAwc2LKqGEVPtN1_euUpQDo6m44RK4wvY9rCv8=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -812,7 +887,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOb52CfeTkL5sAENgLrSM8M3qo0I0_vWDn9erPQ=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -828,7 +903,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOMIMWtGksJi5QbSQ2T5BHQwyMNTL6cYQQWTd8r=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -844,7 +919,7 @@
       "menu": [],
       "mediaUrl": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -860,7 +935,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipMrIlRrJhzhi3TAfc9EGw9HMB6Jd3ORu0ke0qxN=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -876,7 +951,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipO-8Sdjf_tUm3x0q9oGDzAN2erQmEI7u70ywzDe=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -892,7 +967,7 @@
       "menu": [],
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipO-fA4hCmizlJdk7LXWNcEPWLa_OX6-b3hHCXJK=w408-h544-k-no"],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Brunch", "Breakfast"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Brunch", "Breakfast"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -909,7 +984,7 @@
       "gmaps": "https://maps.app.goo.gl/HGSoH4JWU24jQtKQ9",
       "menu": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -925,7 +1000,7 @@
       "gmaps": "https://maps.app.goo.gl/bPH9Xx3UbfMR5H2U9",
       "menu": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Brunch", "Cocktails"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Brunch", "Cocktails"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -941,7 +1016,7 @@
       "gmaps": "https://maps.app.goo.gl/PzUZf6gouRRPH7ha9",
       "menu": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Pastry"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -957,7 +1032,7 @@
       "gmaps": "https://maps.app.goo.gl/hBNhRhdpbV3weEzH7",
       "menu": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Breakfast", "Brunch", "Vegetarian"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Breakfast", "Brunch", "Vegetarian"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -973,7 +1048,7 @@
       "gmaps": "https://maps.app.goo.gl/WHBSqJPvUw61fLBP9",
       "menu": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -989,7 +1064,7 @@
       "menu": [],
       "mediaUrl": [],
       "reviews": [],
-      "tags": ["Food and drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
       "medianRating": 0,
       "numberOfRatings": 0
     }
