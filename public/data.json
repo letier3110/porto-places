@@ -1000,7 +1000,7 @@
       "gmaps": "https://maps.app.goo.gl/bPH9Xx3UbfMR5H2U9",
       "menu": [],
       "reviews": [],
-      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Brunch", "Cocktails"],
+      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Brunch", "Cocktails", "Ukrainian"],
       "medianRating": 0,
       "numberOfRatings": 0
     },
@@ -1065,6 +1065,326 @@
       "mediaUrl": [],
       "reviews": [],
       "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Donau",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/9GeyVxxHYUGePqZs5",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Coffee", "Austrian"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Candelabro",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/cLTdSXZGaX49xXng9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Natural wine", "Wine"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Prova wine food & pleasure",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/nGByL6WTG9Z399dg6",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Natural wine", "Wine"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Gito - Natural Wine Bar & Bottleshop",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/42joGu9su5KkFLyw9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Natural wine", "Wine"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Cave Bombarda - Natural Wine Shop",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/rc13kekDDBZWgBiHA",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Natural wine", "Wine"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Generosa Pão e Pizza",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/ajJPzS5eYkJ9hzt47",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Pizza", "Bakery"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "MAFALDA’S",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/q9EXjznTiHwg6wu27",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Matosinhos", "Breakfast"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Coqueluche",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/R1vzdPpB4NSsn1Mx5",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Porto", "Local gem", "Beer"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Bar Santa Cachaça",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/TRjtYLafqUhjKhV38",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Cocktails", "Local gem"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Estúdio Arte Bar",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/e8j3NMVJZwJ3JRDp8",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Porto", "Cocktails", "Local gem"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Terrárea",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/nDrrmxFngSow5jd76",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Matosinhos", "Breakfast", "Coffee"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Catraio Craft Beer Shop & Bar",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/X42RTU8qF9uMG66j8",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Porto", "Cedofeita", "Beer", "Craft beer"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Mr. Binho Sushi",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/HLoeTr45MGyfBUY98",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Matosinhos", "Sushi", "Japanese"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Barraca do Ouro",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/JPkXNoUGNAd4U5Cd9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Porto", "Foz", "Coffee", "Beer", "Local gem"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Pub Bonaparte Foz",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/12gDqaHrxKyRiJYy5",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Porto", "Foz", "Beer", "Cocktails"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Adega Do Carregal",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/31UijFFmUz8Z5b9d9",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Porto", "Cedofeita", "Local gem", "Restaurant", "Portuguese"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Bali-Hai Polynesian Bar",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/eBxzxeTbG6Q1JRJt6",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Cocktails", "Polynesian", "Good for dates"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Holy Sandwich Shop",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/nDrrmxFngSow5jd76",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Porto", "Burger", "Beer"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Musa das Virtudes",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/dHhZPuBJRLSVoRoU8",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Porto", "Beer", "Craft beer"],
+      "medianRating": 0,
+      "numberOfRatings": 0
+    },
+    {
+      "name": "Fiasco",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "address": "",
+      "hours": [],
+      "gmaps": "https://maps.app.goo.gl/3DhQiWb4SpXELnz3A",
+      "menu": [],
+      "mediaUrl": [],
+      "reviews": [],
+      "tags": ["Food+Drink", "Porto", "Bonfim", "Cocktails"],
       "medianRating": 0,
       "numberOfRatings": 0
     }
