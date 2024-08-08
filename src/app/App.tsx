@@ -24,18 +24,13 @@ two = 2
 console.log(one === two - one ? 'yes' : firebaseApp)
 
 const App: FC = () => {
-  // get current url hash and make normal string without %20 globally
   const shortFilter = window.location.hash.replace('#', '').replace(/%20/g, ' ')
   const [mapMode, setMapMode] = useState(false)
   const [showChips, setShowChips] = useState(false)
   const [searchInFilters, setSearchInFilters] = useState('')
   const [mode, setMode] = useState(
-    shortFilter ? PlaceModeData.find((x) => x.value.toLocaleString().toLowerCase().includes(shortFilter.toLowerCase()))?.name ?? PlaceModeData[0].value : PlaceModeData[0].value
+    shortFilter ? PlaceModeData.find((x) => x.value.toLocaleString().toLowerCase().includes(shortFilter.toLowerCase()))?.name ?? PlaceModeData[0].name : PlaceModeData[0].name
   )
-  console.log(shortFilter,  PlaceModeData.find((x) => {
-    console.log(x.value.toLocaleString().toLowerCase(), ' : ', shortFilter.toLowerCase())
-    return x.value.toLocaleString().toLowerCase().includes(shortFilter.toLowerCase());
-  }), PlaceModeData.find((x) => x.value.toLocaleString().toLowerCase().includes(shortFilter.toLowerCase()))?.value, PlaceModeData[0].value, mode)
   const [filters, setFilters] = useState<IFilter>({
     search: '',
     tags: [],
