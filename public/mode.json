@@ -4,7 +4,7 @@
     "value": ["Food+Drink"]
   },
   {
-    "name": "Climbing 🧗",
+    "name": "Sports",
     "value": ["Sport", "Climbing"]
   },
   {
@@ -12,11 +12,7 @@
     "value": ["Geek"]
   },
   {
-    "name": "Work 💼",
-    "value": ["Work"]
-  },
-  {
-    "name": "Clubs 🎤",
-    "value": ["concert"]
+    "name": "Spots",
+    "value": ["Spots"]
   }
 ]
