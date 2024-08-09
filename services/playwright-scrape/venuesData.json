@@ -1,0 +1,21 @@
+[
+  {
+    "name": "DONAU",
+    "address": "R. Joaquim António de Aguiar 80, 4000-309 Porto",
+    "numberOfRatings": 0,
+    "medianRating": 0,
+    "mediaUrl": [
+      "https://lh5.googleusercontent.com/p/AF1QipOUTqnxbBkDTJb8I05_mZlnw_vasCjBlS7Dl2Zk=w408-h544-k-no"
+    ],
+    "coordinates": {
+      "latitude": 41.144653,
+      "longitude": -8.6009002
+    },
+    "gmaps": "https://maps.app.goo.gl/9GeyVxxHYUGePqZs5",
+    "lastCheckIn": 1723209210620,
+    "hours": [],
+    "menu": [],
+    "reviews": [],
+    "tags": []
+  }
+]

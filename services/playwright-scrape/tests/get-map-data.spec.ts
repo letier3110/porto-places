@@ -1,4 +1,5 @@
-import { Locator, test } from '@playwright/test';
+import { test } from '@playwright/test';
+// import { Locator } from '@playwright/test';
 
 // test('test', async ({ page }) => {
 //   await page.goto('https://www.bing.com/maps?cp=41.160563%7E-8.633194&lvl=11.0');
@@ -79,16 +80,16 @@ test('collect restaurant data', async ({ page }) => {
 
   // partial class name selector:
   // "//div[starts-with(@class, '_wrapper_')]"
-  const generalInfoLocatpr = await page.locator('.b_wftp_cell').first()
-  const reviewsLocator = await page.locator('div:nth-child(2) > .b_wftp_cell').first();
+  // const generalInfoLocatpr = await page.locator('.b_wftp_cell').first()
+  // const reviewsLocator = await page.locator('div:nth-child(2) > .b_wftp_cell').first();
 
   const restaurantData: RestaurantData = {};
 
   // Name
   restaurantData.name = await page.locator('.eh_title.b_entityTitle').textContent();
   // get third children of firstAfterName
-  const firstAfterName = await page.locator('.b_factrow').first(); // rating, cousine, price level
-  const ratingLocator = await firstAfterName.locator('div:nth-child(3)').first();
+  // const firstAfterName = await page.locator('.b_factrow').first(); // rating, cousine, price level
+  // const ratingLocator = await firstAfterName.locator('div:nth-child(3)').first();
   // // · Burger, Brazilian · 
   // const tagContent = (await ratingLocator.textContent() ?? '');
   // const splitTags = tagContent.split('·')
@@ -161,9 +162,9 @@ test('collect restaurant data', async ({ page }) => {
   // }
 
   // Media URLs (images, videos)
-  restaurantData.mediaUrl = await page.locator('.media-item img').evaluateAll(
-    (elements) => elements.map((element) => (element as any).src)
-  );
+  // restaurantData.mediaUrl = await page.locator('.media-item img').evaluateAll(
+  //   (elements) => elements.map((element) => (element as any).src)
+  // );
 
   // Reviews (sample)
   restaurantData.reviews = [];
