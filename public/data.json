@@ -149,18 +149,7 @@
           "comment": "Good. Have to try the spicy one (€8.5)"
         }
       ],
-      "tags": [
-        "Korean",
-        "Asian",
-        "Ramen",
-        "Bento",
-        "Porto",
-        "Cheap",
-        "Dine-in",
-        "Takeaway",
-        "Delivery",
-        "Food+Drink"
-      ],
+      "tags": ["Korean", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Dine-in", "Takeaway", "Delivery", "Food+Drink"],
       "medianRating": 9.2,
       "numberOfRatings": 229
     },
@@ -908,22 +897,6 @@
       "numberOfRatings": 0
     },
     {
-      "name": "SO Coffee Roasters",
-      "coordinates": {
-        "latitude": 0,
-        "longitude": 0
-      },
-      "address": "",
-      "hours": [],
-      "gmaps": "https://maps.app.goo.gl/tZLe38ne8QzASmE28",
-      "menu": [],
-      "mediaUrl": [],
-      "reviews": [],
-      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry"],
-      "medianRating": 0,
-      "numberOfRatings": 0
-    },
-    {
       "name": "So Coffee Roasters - The Feeting Room",
       "coordinates": {
         "latitude": 41.13695,
@@ -1055,14 +1028,14 @@
     {
       "name": "Café Passaporte",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 41.1501742,
+        "longitude": -8.5916266
       },
-      "address": "R. de Santo Ildefonso 491, Porto",
+      "address": "R. de Pinto Bessa 483, 4300-433 Porto",
       "hours": [],
-      "gmaps": "https://maps.app.goo.gl/Z1N3ru5zULczDMMQA",
+      "gmaps": "https://maps.app.goo.gl/DCtaXFt4mQQqYYy2A",
       "menu": [],
-      "mediaUrl": [],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPVPYARydMGImjUeDuSqzkSroskw4E4-p3i1Wp5=w408-h544-k-no"],
       "reviews": [],
       "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
       "medianRating": 0,
