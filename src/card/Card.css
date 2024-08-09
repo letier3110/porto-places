@@ -43,6 +43,8 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: max-content;
+  text-align: center;
+  max-width: 100%;
   font-size: 1.6rem;
   font-weight: bold;
   z-index: 1;
