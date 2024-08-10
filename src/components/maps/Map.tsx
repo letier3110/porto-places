@@ -1,8 +1,8 @@
 import mapboxgl from 'mapbox-gl'
 import { FC, useEffect, useMemo, useRef, useState } from 'react'
 import { renderToString } from 'react-dom/server'
-import ErrorBoundary from '../components/app/ErrorBoundary'
-import { DataEntry } from '../lib/interfaces'
+import ErrorBoundary from '../app/ErrorBoundary'
+import { DataEntry } from '../../lib/interfaces'
 import './mapbox.css'
 import MiniCard from './MiniCard'
 

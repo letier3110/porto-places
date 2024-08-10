@@ -76,6 +76,7 @@
   "data": [
     {
       "name": "Kuma Bento & Ramen",
+      "detailed": "places/kuma_bento_ramen.json",
       "coordinates": {
         "latitude": 41.146014,
         "longitude": -8.6124146
