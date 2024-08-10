@@ -1,0 +1,38 @@
+{
+  "name": "Kuma Bento & Ramen",
+  "detailed": "places/kuma_bento_ramen.json",
+  "coordinates": {
+    "latitude": 41.146014,
+    "longitude": -8.6124146
+  },
+  "address": "R. da Madeira 204, 4000-330 Porto",
+  "hours": [
+    {
+      "open": "Sat, 12:00",
+      "close": "Sat, 15:00"
+    },
+    {
+      "open": "Sat, 19:00",
+      "close": "Sat, 23:00"
+    }
+  ],
+  "gmaps": "https://maps.app.goo.gl/KiubzxUd9L4eqPEL8",
+  "menu": [
+    {
+      "name": "Ramen",
+      "price": 7.5
+    }
+  ],
+  "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOMwEb3GyzsdQfbQOZpLWV2KNuQgubrAVtCrvKb=w408-h544-k-no"],
+  "reviews": [
+    {
+      "name": "João",
+      "rating": 7.5,
+      "comment": "Good. Have to try the spicy one (€8.5)"
+    }
+  ],
+  "tags": ["Japanese", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Food+Drink"],
+  "medianRating": 9.6,
+  "numberOfRatings": 182,
+  "lastCheckIn": 1723205060823
+}

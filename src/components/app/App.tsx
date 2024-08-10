@@ -1,12 +1,12 @@
 import { FC, useState } from 'react'
 import './App.css'
 import Card from '../card/Card'
-import CardsData from '../../public/data.json'
-import PlaceModeData from '../../public/mode.json'
-import tagGroups from '../../public/filters.json'
-import { DataEntry } from '../lib/interfaces'
+import CardsData from '../../../public/data.json'
+import PlaceModeData from '../../../public/mode.json'
+import tagGroups from '../../../public/filters.json'
+import { DataEntry } from '../../lib/interfaces'
 import Map from '../maps/Map'
-import { firebaseApp } from '../firebase/firebase'
+import { firebaseApp } from '../../lib/firebase/firebase'
 
 const data = CardsData as { data: Array<DataEntry> }
 const cardsData = data.data

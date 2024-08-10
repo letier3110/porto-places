@@ -144,17 +144,8 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .MiniCardDirections {
-    background-color: #ffffff;
-    color: var(--primary-color, #646cff);
-  }
-  .directions {
-    background-color: var(--primary-color, #646cff);
-    color: #ffffff;
-  }
-  .directions:hover {
-    background-color: #f9f9f9;
-    color: var(--primary-color, #646cff);
+  .ChipsModal {
+    background-color: rgba(255, 255, 255, 0.8);
   }
 }
 
