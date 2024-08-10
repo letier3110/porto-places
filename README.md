@@ -40,6 +40,7 @@ none for now
 
 ### Tooling
 
-1. Scrapper in `./services/playwright-scrape`, work with bing maps
-2. Scrapper in `./services/gmaps-scrapper-hono`, wip, must scrape from gmaps, but for now its not implemented
-3. AI-agent prompt to convert any data / freeform data to structured JSON for `./public/data.json`. Use it as system-prompt, and then send message with your scrapped data to convert it to correct format.
+1. Scrapper in `./services/playwright-scrape`, `test` script work with bing maps
+2. Scrapper in `./services/playwright-scrape`, `scrape` script work with gmaps - input url, output formatted json for `./public.data.json`
+3. Scrapper in `./services/gmaps-scrapper-hono`, wip, must scrape from gmaps, but for now its not implemented
+4. AI-agent prompt `./public/prompt.sample` to convert any data / freeform data to structured JSON for `./public/data.json`. Use it as system-prompt, and then send message with your scrapped data to convert it to correct format.
