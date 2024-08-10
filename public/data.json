@@ -1,6 +1,7 @@
 {
   "model": {
     "name": "string",
+    "detailed": "string",
     "coordinates": {
       "latitude": "number",
       "longitude": "number"
@@ -29,11 +30,13 @@
     ],
     "tags": ["string"],
     "medianRating": "number",
-    "numberOfRatings": "number"
+    "numberOfRatings": "number",
+    "lastCheckIn": "number"
   },
 
   "example": {
     "name": "Kuma Bento & Ramen",
+    "detailed": "places/kuma_bento_ramen.json",
     "coordinates": {
       "latitude": 41.146014,
       "longitude": -8.6124146
@@ -66,12 +69,14 @@
     ],
     "tags": ["Japanese", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Food+Drink"],
     "medianRating": 9.6,
-    "numberOfRatings": 182
+    "numberOfRatings": 182,
+    "lastCheckIn": 1723205060823
   },
 
   "data": [
     {
       "name": "Kuma Bento & Ramen",
+      "detailed": "places/kuma_bento_ramen.json",
       "coordinates": {
         "latitude": 41.146014,
         "longitude": -8.6124146
@@ -115,7 +120,8 @@
         "Food+Drink"
       ],
       "medianRating": 9.6,
-      "numberOfRatings": 182
+      "numberOfRatings": 182,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Soju Pocha 소주포차",
@@ -149,20 +155,10 @@
           "comment": "Good. Have to try the spicy one (€8.5)"
         }
       ],
-      "tags": [
-        "Korean",
-        "Asian",
-        "Ramen",
-        "Bento",
-        "Porto",
-        "Cheap",
-        "Dine-in",
-        "Takeaway",
-        "Delivery",
-        "Food+Drink"
-      ],
+      "tags": ["Korean", "Asian", "Ramen", "Bento", "Porto", "Cheap", "Dine-in", "Takeaway", "Delivery", "Food+Drink"],
       "medianRating": 9.2,
-      "numberOfRatings": 229
+      "numberOfRatings": 229,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "RO",
@@ -209,7 +205,8 @@
         "Food+Drink"
       ],
       "medianRating": 8.4,
-      "numberOfRatings": 2164
+      "numberOfRatings": 2164,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "CURB",
@@ -241,7 +238,8 @@
       ],
       "tags": ["Portuguese", "Burger", "Porto", "Cheap", "Takeaway", "Delivery", "Food+Drink"],
       "medianRating": 9.4,
-      "numberOfRatings": 1971
+      "numberOfRatings": 1971,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Chapa Quente",
@@ -257,7 +255,8 @@
       "reviews": [],
       "tags": ["Brazilian", "Burger", "Food+Drink"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Baobab - Craft Beer Bar",
@@ -273,7 +272,8 @@
       "reviews": [],
       "tags": ["Beer", "Craft beer", "Bar", "Food+Drink"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Rice - Vietnamita Cozinha",
@@ -289,7 +289,8 @@
       "reviews": [],
       "tags": ["Vietmamese", "Cafe", "Food+Drink"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "FÉ Wine & Club",
@@ -342,7 +343,8 @@
       "reviews": [],
       "tags": ["Cocktails", "Wine", "Food+Drink"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Coqueluche",
@@ -401,7 +403,8 @@
       "reviews": [],
       "tags": ["Beer", "Local", "Sports bar", "Bar", "Food+Drink"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Bali-Hai Polynesian Bar",
@@ -454,7 +457,8 @@
       "reviews": [],
       "tags": ["Cocktails", "Bar", "Food+Drink"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Iguarias de HANÓI",
@@ -513,7 +517,8 @@
       "reviews": [],
       "tags": ["Vietnamese", "Cafe", "Food+Drink"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Pub Bonaparte Foz",
@@ -572,7 +577,8 @@
       "reviews": [],
       "tags": ["Beer", "Pub", "Sports bar", "Food+Drink"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Cervejaria Nortada",
@@ -588,7 +594,8 @@
       "reviews": [],
       "tags": ["Beer", "Craft beer", "Bar", "Food+Drink"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "DOM | specialty coffee & Food+Drink",
@@ -609,7 +616,8 @@
       "reviews": [],
       "tags": ["Coffee", "Restaurant", "Belorussian", "Food+Drink"],
       "medianRating": 4.5,
-      "numberOfRatings": 1
+      "numberOfRatings": 1,
+      "lastCheckIn": 1723205060823
     },
 
     {
@@ -626,7 +634,8 @@
       "reviews": [],
       "tags": ["Climbing", "Sport"],
       "medianRating": 5,
-      "numberOfRatings": 5
+      "numberOfRatings": 5,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Proa Climbing Center",
@@ -642,7 +651,8 @@
       "reviews": [],
       "tags": ["Climbing", "Sport"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "The North Wall",
@@ -663,7 +673,8 @@
       "reviews": [],
       "tags": ["Climbing", "Sport"],
       "medianRating": 4.7,
-      "numberOfRatings": 177
+      "numberOfRatings": 177,
+      "lastCheckIn": 1723205060823
     },
 
     {
@@ -685,7 +696,8 @@
       "reviews": [],
       "tags": ["Geek", "Manga", "Comics", "Books"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Arena Porto",
@@ -710,7 +722,8 @@
       "reviews": [],
       "tags": ["Geek", "Board Games", "Gaming Table", "Books", "Comics", "Manga"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
 
     {
@@ -727,7 +740,8 @@
       "reviews": [],
       "tags": ["Work", "Coworking", "Office", "Remote work"],
       "medianRating": 5,
-      "numberOfRatings": 5
+      "numberOfRatings": 5,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Vertical Coworking Firmeza",
@@ -743,7 +757,8 @@
       "reviews": [],
       "tags": ["Work", "Coworking", "Office", "Remote work"],
       "medianRating": 5,
-      "numberOfRatings": 5
+      "numberOfRatings": 5,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Selina Navis Coworking",
@@ -759,7 +774,8 @@
       "reviews": [],
       "tags": ["Work", "Coworking", "Office", "Remote work"],
       "medianRating": 5,
-      "numberOfRatings": 5
+      "numberOfRatings": 5,
+      "lastCheckIn": 1723205060823
     },
 
     {
@@ -776,7 +792,8 @@
       "reviews": [],
       "tags": ["concert", "club", "bar", "hard rock"],
       "medianRating": 4.4,
-      "numberOfRatings": 3596
+      "numberOfRatings": 3596,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Barracuda Rock Club",
@@ -792,7 +809,8 @@
       "reviews": [],
       "tags": ["concert", "rock club"],
       "medianRating": 4.7,
-      "numberOfRatings": 64
+      "numberOfRatings": 64,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "FERRO BAR",
@@ -808,7 +826,8 @@
       "reviews": [],
       "tags": ["bar", "concert"],
       "medianRating": 4.4,
-      "numberOfRatings": 951
+      "numberOfRatings": 951,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Mary Spot Vintage Bar",
@@ -824,7 +843,8 @@
       "reviews": [],
       "tags": ["bar", "vintage", "concert"],
       "medianRating": 4.5,
-      "numberOfRatings": 955
+      "numberOfRatings": 955,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Socorro",
@@ -839,8 +859,9 @@
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOMHZHP8C-lxW7xjiQ6pZVH4-dPgvbMjNSY4x7A=w408-h544-k-no"],
       "reviews": [],
       "tags": ["bar", "concert", "vintage"],
+      "medianRating": "5.0",
       "numberOfRatings": 66,
-      "medianRating": "5.0"
+      "lastCheckIn": 1723205060823
     },
 
     {
@@ -857,7 +878,8 @@
       "reviews": [],
       "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry", "Breakfast"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Senzu Coffee Roasters",
@@ -873,7 +895,8 @@
       "reviews": [],
       "tags": ["Food+Drink", "Coffee", "Specialty coffee"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "von&vonnie microroasters",
@@ -889,7 +912,8 @@
       "reviews": [],
       "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "7g Roaster",
@@ -905,23 +929,8 @@
       "reviews": [],
       "tags": ["Food+Drink", "Coffee", "Specialty coffee"],
       "medianRating": 0,
-      "numberOfRatings": 0
-    },
-    {
-      "name": "SO Coffee Roasters",
-      "coordinates": {
-        "latitude": 0,
-        "longitude": 0
-      },
-      "address": "",
-      "hours": [],
-      "gmaps": "https://maps.app.goo.gl/tZLe38ne8QzASmE28",
-      "menu": [],
-      "mediaUrl": [],
-      "reviews": [],
-      "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry"],
-      "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "So Coffee Roasters - The Feeting Room",
@@ -937,7 +946,8 @@
       "reviews": [],
       "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "SO Coffee Roasters",
@@ -953,7 +963,8 @@
       "reviews": [],
       "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Hakko",
@@ -969,7 +980,8 @@
       "reviews": [],
       "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Brunch", "Breakfast"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "C'alma Coffee",
@@ -986,7 +998,8 @@
       "reviews": [],
       "tags": ["Food+Drink", "Coffee", "Specialty coffee"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "STORY | brunch & cocktails",
@@ -1002,7 +1015,8 @@
       "reviews": [],
       "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Brunch", "Cocktails", "Ukrainian"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Época Porto",
@@ -1018,7 +1032,8 @@
       "reviews": [],
       "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Pastry"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "MANNA ~ Food & Yoga",
@@ -1034,7 +1049,8 @@
       "reviews": [],
       "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Breakfast", "Brunch", "Vegetarian"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Combi Coffee Roasters",
@@ -1050,22 +1066,24 @@
       "reviews": [],
       "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
       "medianRating": 0,
-      "numberOfRatings": 0
+      "numberOfRatings": 0,
+      "lastCheckIn": 1723205060823
     },
     {
       "name": "Café Passaporte",
       "coordinates": {
-        "latitude": 0,
-        "longitude": 0
+        "latitude": 41.1501742,
+        "longitude": -8.5916266
       },
-      "address": "R. de Santo Ildefonso 491, Porto",
+      "address": "R. de Pinto Bessa 483, 4300-433 Porto",
       "hours": [],
-      "gmaps": "https://maps.app.goo.gl/Z1N3ru5zULczDMMQA",
+      "gmaps": "https://maps.app.goo.gl/DCtaXFt4mQQqYYy2A",
       "menu": [],
-      "mediaUrl": [],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPVPYARydMGImjUeDuSqzkSroskw4E4-p3i1Wp5=w408-h544-k-no"],
       "reviews": [],
       "tags": ["Food+Drink", "Coffee", "Specialty coffee", "Bakery", "Pastry"],
       "medianRating": 0,
+      "lastCheckIn": 1723205060823,
       "numberOfRatings": 0
     },
     {

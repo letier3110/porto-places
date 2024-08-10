@@ -1,15 +1,9 @@
 import { FC, useState } from 'react'
-import './App.css'
+import { DataEntry } from 'src/lib/interfaces'
+import tagGroups from '../../../public/filters.json'
+import PlaceModeData from '../../../public/mode.json'
 import Card from '../card/Card'
-import CardsData from '../../public/data.json'
-import PlaceModeData from '../../public/mode.json'
-import tagGroups from '../../public/filters.json'
-import { DataEntry } from '../lib/interfaces'
 import Map from '../maps/Map'
-import { firebaseApp } from '../firebase/firebase'
-
-const data = CardsData as { data: Array<DataEntry> }
-const cardsData = data.data
 
 interface IFilter {
   search: string
@@ -17,19 +11,20 @@ interface IFilter {
   sort: string
 }
 
-const one = 1
-let two = 0
-two = 2
+interface ListViewProps {
+  data: Array<DataEntry>
+}
 
-console.log(one === two - one ? 'yes' : firebaseApp)
-
-const App: FC = () => {
+export const ListView: FC<ListViewProps> = ({ data: cardsData }) => {
   const shortFilter = window.location.hash.replace('#', '').replace(/%20/g, ' ')
   const [mapMode, setMapMode] = useState(false)
   const [showChips, setShowChips] = useState(false)
   const [searchInFilters, setSearchInFilters] = useState('')
   const [mode, setMode] = useState(
-    shortFilter ? PlaceModeData.find((x) => x.value.toLocaleString().toLowerCase().includes(shortFilter.toLowerCase()))?.name ?? PlaceModeData[0].name : PlaceModeData[0].name
+    shortFilter
+      ? PlaceModeData.find((x) => x.value.toLocaleString().toLowerCase().includes(shortFilter.toLowerCase()))?.name ??
+          PlaceModeData[0].name
+      : PlaceModeData[0].name
   )
   const [filters, setFilters] = useState<IFilter>({
     search: '',
@@ -249,5 +244,3 @@ const App: FC = () => {
     </div>
   )
 }
-
-export default App

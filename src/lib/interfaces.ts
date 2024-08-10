@@ -1,6 +1,7 @@
 // todo: refactor to smaller interfaces and mark optional fields
 export interface DataEntry {
   name: string
+  detailed?: string
   coordinates: {
     latitude: number
     longitude: number
