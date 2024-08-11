@@ -99,7 +99,9 @@ const Map: FC<MapProps> = ({ data }) => {
           properties: {
             ...card,
             name: card.name,
-            color: '#646cff'
+            description: card.name,
+            color: '#646cff',
+            icon: 'music'
           },
           geometry: {
             type: 'Point',
@@ -197,6 +199,18 @@ const Map: FC<MapProps> = ({ data }) => {
         //   }
         // })
         map.current.addLayer({
+          id: 'poi-layer-text',
+          source: 'poi-source',
+          type: 'symbol',
+          layout: {
+            'text-field': ['get', 'description'],
+            'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
+            'text-radial-offset': 0.5,
+            'text-justify': 'auto',
+          }
+        })
+
+        map.current.addLayer({
           id: 'poi-layer',
           source: 'poi-source',
           type: 'circle',
@@ -204,14 +218,6 @@ const Map: FC<MapProps> = ({ data }) => {
             'circle-radius': 6,
             'circle-color': ['get', 'color']
           }
-
-          // type: 'fill-extrusion',
-          // paint: {
-          //   'fill-extrusion-color': ['get', 'color'],
-          //   'fill-extrusion-height': ['get', 'height'],
-          //   'fill-extrusion-base': 0,
-          //   'fill-extrusion-opacity': 0.8
-          // }
         })
 
         // const hoveredStateId: number | null = null
