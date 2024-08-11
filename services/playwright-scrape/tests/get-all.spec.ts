@@ -53,10 +53,15 @@ test('test', async ({ page }) => {
       .locator('[jstcache="3"] > div > div > div > div > div:nth-child(2) > div > div > div')
       .first()
     const name = await nameEl?.textContent()
-    const addressEl = await page
-      .locator('[jstcache="3"] > div > div > div > div > div:nth-child(9) > div:nth-child(3)')
-      .first()
-    const address = await addressEl?.textContent()
+    let address: string | null = ''
+    try {
+      const addressEl = await page
+        .locator('[jstcache="3"] > div > div > div > div > div:nth-child(9) > div:nth-child(3)')
+        .first()
+      address = await addressEl?.textContent() ?? 'failed to fetch address'
+    } catch (error) {
+      console.log('error', error)
+    }
     // const numberOfRatingsEl = await page
     //   .locator(
     //     '[jstcache="3"] > div > div > div > div > div:nth-child(2) > div > div > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(2)'
@@ -73,18 +78,29 @@ test('test', async ({ page }) => {
       // medianRating: Number.parseFloat(medianRating ?? '0')
       medianRating: 0,
     }
-    const btnBg = await page.$('[jsaction$=".heroHeaderImage"]')
-    if (!btnBg) return
-    const fromImg = await btnBg.$('img')
-    const imgUrl = await fromImg?.getAttribute('src')
-    // console.log(page.url()) // https://www.google.com/maps/place/DONAU/@41.144653,-8.6009002,17z/data
-    const secondPartVenueData = {
-      mediaUrl: [imgUrl?.split('=w')[0].concat('=w408-h544-k-no') ?? 'failed to fetch image'],
+    let secondPartVenueData = {
+      mediaUrl: ['failed to fetch image'],
       coordinates: {
-        latitude: Number.parseFloat(page.url().split('place/')[1].split('/')[1].split('@')[1].split(',')[0]),
-        longitude: Number.parseFloat(page.url().split('place/')[1].split('/')[1].split('@')[1].split(',')[1])
+        latitude: 0,
+        longitude: 0
       }
     }
+    try {
+      const btnBg = await page.$('[jsaction$=".heroHeaderImage"]')
+      if (!btnBg) return
+      const fromImg = await btnBg.$('img')
+      const imgUrl = await fromImg?.getAttribute('src')
+      secondPartVenueData = {
+        mediaUrl: [imgUrl?.split('=w')[0].concat('=w408-h544-k-no') ?? 'failed to fetch image'],
+        coordinates: {
+          latitude: Number.parseFloat(page.url().split('place/')[1].split('/')[1].split('@')[1].split(',')[0]),
+          longitude: Number.parseFloat(page.url().split('place/')[1].split('/')[1].split('@')[1].split(',')[1])
+        }
+      }
+    } catch (error) {
+      console.log('error 2', error)
+    }
+    // console.log(page.url()) // https://www.google.com/maps/place/DONAU/@41.144653,-8.6009002,17z/data
     const finalJSON: IVenue = {
       ...partVenueData,
       ...secondPartVenueData,
