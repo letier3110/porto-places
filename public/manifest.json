@@ -5,7 +5,7 @@
   "scope": "/",
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#fff",
+  "theme_color": "#0f2f7f",
   "background_color": "#0f2f7f",
   "description": "A hidden jems-places of Porto.",
   "icons": [
