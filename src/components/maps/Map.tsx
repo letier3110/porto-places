@@ -158,7 +158,8 @@ const Map: FC<MapProps> = ({ data }) => {
       // pitch: 60,
       // bearing: -60,
       dragRotate: false,
-      touchZoomRotate: false
+      touchZoomRotate: false,
+      localFontFamily: 'Pangea Display,Helvetica,Arial,sans-serif',
     })
     if (map.current) {
       map.current.on('load', () => {
@@ -207,6 +208,9 @@ const Map: FC<MapProps> = ({ data }) => {
             'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
             'text-radial-offset': 0.5,
             'text-justify': 'auto',
+          },
+          paint: {
+            'text-color': mode === 'dark' ? '#fff' : '#000',
           }
         })
 

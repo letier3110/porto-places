@@ -106,7 +106,7 @@ export const ListView: FC<ListViewProps> = ({ data: cardsData }) => {
   }
 
   const Modes = (
-    <button className='filters' onClick={handleToggleMode}>
+    <button className='filters outline' onClick={handleToggleMode}>
       {mode}
     </button>
   )
@@ -154,7 +154,7 @@ export const ListView: FC<ListViewProps> = ({ data: cardsData }) => {
 
   const ViewMode = (
     <div className='ViewMode'>
-      <button className='ViewModeBtn' onClick={handleToggleMapMode}>
+      <button className='ViewModeBtn outline' onClick={handleToggleMapMode}>
         {mapMode ? 'Map View' : 'Grid View'}
       </button>
     </div>
@@ -162,7 +162,7 @@ export const ListView: FC<ListViewProps> = ({ data: cardsData }) => {
 
   const Mailto = (
     <div className='MailLink'>
-      <button>
+      <button className='outline'>
         <a className='btn' href={`mailto:${(import.meta.env.VITE_EMAIL as string) || ''}?subject=Cool place in Porto`}>
           <span>💌</span>
           <span>Send us your favorite place</span>
@@ -241,6 +241,7 @@ export const ListView: FC<ListViewProps> = ({ data: cardsData }) => {
           <Map data={filteredContent} />
         </div>
       )}
+      <div className='bottom'></div>
     </div>
   )
 }

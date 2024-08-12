@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import 'mapbox-gl/dist/mapbox-gl.css';
 import App from './components/app/App.tsx'
 import './index.css'
+import './font.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

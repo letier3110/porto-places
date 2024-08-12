@@ -22,6 +22,8 @@
 }
 
 .ViewMode {
+  font-weight: 600;
+  font-family: var(--font-secondary);
   display: flex;
   gap: 12px;
 }
@@ -55,6 +57,7 @@
 }
 
 .filters {
+  font-family: var(--font-text);
   text-transform: uppercase;
 }
 
@@ -140,10 +143,18 @@
 }
 
 .MailLink button {
+  font-family: var(--font-secondary);
   background-color: var(--primary-color, #646cff);
 }
 
 @media (prefers-color-scheme: light) {
+  .bottom {
+    background-image: url('public/bottomBig.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+  }
   .ChipsModal {
     background-color: rgba(255, 255, 255, 0.8);
   }
@@ -185,5 +196,14 @@
   }
   .MobileHeader .MailLink button {
     width: 100%;
+  }
+  @media (prefers-color-scheme: light) {
+    .bottom {
+      background-image: url('public/bottom.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 400px;
+    }
   }
 }

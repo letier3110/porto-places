@@ -41,6 +41,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  font-family: var(--font-secondary);
   transform: translateX(-50%) translateY(-50%);
   width: max-content;
   text-align: center;
@@ -146,12 +147,17 @@
 }
 
 .CardOverlayContentInfo {
+  font-family: var(--font-secondary);
   display: flex;
   gap: 12px;
+}
 
+.CardOverlayContentTag {
+  font-family: var(--font-secondary);
 }
 
 .directions {
+  font-family: var(--font-secondary);
   background-color: var(--primary-color, #646cff);
   color: #ffffff;
   border-radius: 8px;
