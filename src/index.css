@@ -1,4 +1,6 @@
 :root {
+  /* SAME COLOR */
+  /* --primary-color: #0f2f7f; */
   --primary-color: rgb(15, 47, 127);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
