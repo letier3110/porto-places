@@ -142,7 +142,7 @@
   right: 0;
   height: 100%;
   width: 100%; /* Ensures it covers the whole area */
-  background: url('assets/star.svg') repeat-x; /* Path to your star outline image */
+  background: url('../../assets/star.svg') repeat-x; /* Path to your star outline image */
   background-size: contain; /* Adjust the size of your stars */
 }
 
