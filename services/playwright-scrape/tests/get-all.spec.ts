@@ -58,7 +58,7 @@ test('test', async ({ page }) => {
       const addressEl = await page
         .locator('[jstcache="3"] > div > div > div > div > div:nth-child(9) > div:nth-child(3)')
         .first()
-      address = await addressEl?.textContent() ?? 'failed to fetch address'
+      address = (await addressEl?.textContent()) ?? 'failed to fetch address'
     } catch (error) {
       console.log('error', error)
     }
@@ -76,27 +76,23 @@ test('test', async ({ page }) => {
       // numberOfRatings: Number.parseInt(numberOfRatings ?? '0'),
       numberOfRatings: 0,
       // medianRating: Number.parseFloat(medianRating ?? '0')
-      medianRating: 0,
+      medianRating: 0
     }
-    let secondPartVenueData = {
+    const [latitude, longitude] = page.url().split('!8m2!3d')[1].split('!16s%')[0].split('!4d').map(parseFloat);
+    const secondPartVenueData = {
       mediaUrl: ['failed to fetch image'],
       coordinates: {
-        latitude: 0,
-        longitude: 0
+        latitude,
+        longitude
       }
     }
+
     try {
       const btnBg = await page.$('[jsaction$=".heroHeaderImage"]')
       if (!btnBg) return
       const fromImg = await btnBg.$('img')
       const imgUrl = await fromImg?.getAttribute('src')
-      secondPartVenueData = {
-        mediaUrl: [imgUrl?.split('=w')[0].concat('=w408-h544-k-no') ?? 'failed to fetch image'],
-        coordinates: {
-          latitude: Number.parseFloat(page.url().split('place/')[1].split('/')[1].split('@')[1].split(',')[0]),
-          longitude: Number.parseFloat(page.url().split('place/')[1].split('/')[1].split('@')[1].split(',')[1])
-        }
-      }
+      secondPartVenueData.mediaUrl = [imgUrl?.split('=w')[0].concat('=w408-h544-k-no') ?? 'failed to fetch image']
     } catch (error) {
       console.log('error 2', error)
     }

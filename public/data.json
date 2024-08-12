@@ -38,8 +38,8 @@
     "name": "Kuma Bento & Ramen",
     "detailed": "places/kuma_bento_ramen.json",
     "coordinates": {
-      "latitude": 41.146014,
-      "longitude": -8.6124146
+      "latitude": 41.1459606,
+      "longitude": -8.6099204
     },
     "address": "R. da Madeira 204, 4000-330 Porto",
     "hours": [
@@ -126,8 +126,8 @@
     {
       "name": "Soju Pocha 소주포차",
       "coordinates": {
-        "latitude": 41.1471187,
-        "longitude": -8.6133853
+        "latitude": 41.1469591,
+        "longitude": -8.6123177
       },
       "address": "Rua do Almada 95, Rua do Almada 93, 4000-196 Porto",
       "hours": [
@@ -212,7 +212,7 @@
       "name": "CURB",
       "coordinates": {
         "latitude": 41.1524516,
-        "longitude": -8.6225573
+        "longitude": -8.6199824
       },
       "address": "Rua da Torrinha 111, 4050-611 Porto",
       "hours": [
@@ -244,8 +244,8 @@
     {
       "name": "Chapa Quente",
       "coordinates": {
-        "latitude": 41.160563,
-        "longitude": -8.633194
+        "latitude": 41.1538249,
+        "longitude": -8.611851
       },
       "address": "Praça República 206 Porto 4050-498",
       "hours": [],
@@ -935,8 +935,8 @@
     {
       "name": "So Coffee Roasters - The Feeting Room",
       "coordinates": {
-        "latitude": 41.13695,
-        "longitude": -8.61402
+        "latitude": 41.1456816,
+        "longitude": -8.6124767
       },
       "address": "R. de Sá de Noronha 119, 4050-528 Porto",
       "hours": [],
@@ -1088,11 +1088,11 @@
     },
     {
       "name": "DONAU",
-      "address": "R. Joaquim António de Aguiar 80, 4000-309 Porto",
+      "address": "R. Joaquim António de Aguiar 80, 4000-309 Porto",
       "numberOfRatings": 0,
       "medianRating": 0,
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOUTqnxbBkDTJb8I05_mZlnw_vasCjBlS7Dl2Zk=w408-h544-k-no"],
-      "coordinates": { "latitude": 41.144653, "longitude": -8.6009002 },
+      "coordinates": { "latitude": 41.1446983, "longitude": -8.5984408 },
       "gmaps": "https://maps.app.goo.gl/9GeyVxxHYUGePqZs5",
       "lastCheckIn": 1723374052136,
       "hours": [],
@@ -1102,11 +1102,11 @@
     },
     {
       "name": "Candelabro",
-      "address": "Rua da Conceição 3, 4050-215 Porto",
+      "address": "Rua da Conceição 3, 4050-215 Porto",
       "numberOfRatings": 0,
       "medianRating": 0,
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOx81jGZoVw4FyfecE4xaR1v8YE8FJGohvtBsq8=w408-h544-k-no"],
-      "coordinates": { "latitude": 41.1465478, "longitude": -8.6220773 },
+      "coordinates": { "latitude": 41.1499743, "longitude": -8.6132952 },
       "gmaps": "https://maps.app.goo.gl/cLTdSXZGaX49xXng9",
       "lastCheckIn": 1723374053733,
       "hours": [],
@@ -1116,11 +1116,11 @@
     },
     {
       "name": "Prova wine food & pleasure",
-      "address": "R. de Ferreira Borges 86, 4050-252 Porto",
+      "address": "R. de Ferreira Borges 86, 4050-252 Porto",
       "numberOfRatings": 0,
       "medianRating": 0,
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPgrHfihh60aY38KKnl7yiN-096BuL-mmqIM7tX=w408-h544-k-no"],
-      "coordinates": { "latitude": 41.1465478, "longitude": -8.6220773 },
+      "coordinates": { "latitude": 41.1425084, "longitude": -8.6152915 },
       "gmaps": "https://maps.app.goo.gl/nGByL6WTG9Z399dg6",
       "lastCheckIn": 1723374055490,
       "hours": [],
@@ -1130,11 +1130,11 @@
     },
     {
       "name": "Gito - Natural Wine Bar & Bottleshop",
-      "address": "Rua dos Mártires da Liberdade 21, 4050-453 Porto",
+      "address": "Rua dos Mártires da Liberdade 21, 4050-453 Porto",
       "numberOfRatings": 0,
       "medianRating": 0,
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipNiPZc15KGS5MUsa7y1q97K7YNFz_TbUsVzhQM=w408-h544-k-no"],
-      "coordinates": { "latitude": 41.1465478, "longitude": -8.6220773 },
+      "coordinates": { "latitude": 41.1505823, "longitude": -8.6144397 },
       "gmaps": "https://maps.app.goo.gl/42joGu9su5KkFLyw9",
       "lastCheckIn": 1723374057984,
       "hours": [],
@@ -1144,11 +1144,11 @@
     },
     {
       "name": "Cave Bombarda - Natural Wine Shop",
-      "address": "Centro Comercial Bombarda Rua do Rosário 84 CCBombarda, Loja 16, 4050-381 Porto",
+      "address": "Centro Comercial Bombarda Rua do Rosário 84 CCBombarda, Loja 16, 4050-381 Porto",
       "numberOfRatings": 0,
       "medianRating": 0,
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPqmXxjf2Oiehe6xB8hV2j28tel7_qJ1VsRADkG=w408-h544-k-no"],
-      "coordinates": { "latitude": 41.1490532, "longitude": -8.6296853 },
+      "coordinates": { "latitude": 41.1490515, "longitude": -8.620813 },
       "gmaps": "https://maps.app.goo.gl/rc13kekDDBZWgBiHA",
       "lastCheckIn": 1723374059762,
       "hours": [],
@@ -1158,11 +1158,14 @@
     },
     {
       "name": "Generosa Pão e Pizza",
-      "address": "Rua de Miguel Bombarda 66, 4050-377 Porto",
+      "address": "Rua de Miguel Bombarda 66, 4050-377 Porto",
       "numberOfRatings": 0,
       "medianRating": 0,
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipNbl5VDpjnSMwHnjZ4_A9eOXrOflGNhXgUNtX3H=w408-h544-k-no"],
-      "coordinates": { "latitude": 41.1501231, "longitude": -8.620291 },
+      "coordinates": {
+        "latitude": 41.1501231,
+        "longitude": -8.6177161
+      },
       "gmaps": "https://maps.app.goo.gl/ajJPzS5eYkJ9hzt47",
       "lastCheckIn": 1723374061569,
       "hours": [],
@@ -1172,7 +1175,7 @@
     },
     {
       "name": "MAFALDA’S",
-      "address": "R. França Júnior 65, 4450-073 Matosinhos",
+      "address": "R. França Júnior 65, 4450-073 Matosinhos",
       "numberOfRatings": 0,
       "medianRating": 0,
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipMvrS7gQRpF_b1_Vp84h7t6M424n1wyDIDJij9U=w408-h544-k-no"],
@@ -1186,11 +1189,11 @@
     },
     {
       "name": "Bar Santa Cachaça (brasileira)",
-      "address": "R. de Santa Catarina 800, 4000-457 Porto",
+      "address": "R. de Santa Catarina 800, 4000-457 Porto",
       "numberOfRatings": 0,
       "medianRating": 0,
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipMFPGcJjNnZ_J2Vlxi-sn9NwVyFxTOtZHQdf_vk=w408-h544-k-no"],
-      "coordinates": { "latitude": 41.1567456, "longitude": -8.6072958 },
+      "coordinates": { "latitude": 41.1567456, "longitude": -8.6047209 },
       "gmaps": "https://maps.app.goo.gl/TRjtYLafqUhjKhV38",
       "lastCheckIn": 1723374403453,
       "hours": [],
@@ -1200,7 +1203,7 @@
     },
     {
       "name": "Estúdio Arte Bar",
-      "address": "R. de Antero de Quental 710, 4200-068 Porto",
+      "address": "R. de Antero de Quental 710, 4200-068 Porto",
       "numberOfRatings": 0,
       "medianRating": 0,
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOTzFxLcEcavAhOpnSp5XdAPnF691NlzEru9y3E=w408-h544-k-no"],
@@ -1214,7 +1217,7 @@
     },
     {
       "name": "Terrárea",
-      "address": "Rua de Brito Capelo 1211, 4450-078 Matosinhos",
+      "address": "Rua de Brito Capelo 1211, 4450-078 Matosinhos",
       "numberOfRatings": 0,
       "medianRating": 0,
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipN3Ud2sNuN9ZwuElAOc5k-qVbbMOmSGGx7pWYZo=w408-h544-k-no"],
@@ -1228,7 +1231,7 @@
     },
     {
       "name": "Catraio Craft Beer Shop & Bar",
-      "address": "R. de Cedofeita 256, 4050-174 Porto",
+      "address": "R. de Cedofeita 256, 4050-174 Porto",
       "numberOfRatings": 0,
       "medianRating": 0,
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipMYGI0XIy8laKM3628edXYn0tKr2QguS4UTnaQK=w408-h544-k-no"],
@@ -1258,7 +1261,7 @@
     },
     {
       "name": "Barraca do Ouro",
-      "address": "4150-553 Porto",
+      "address": "4150-553 Porto",
       "numberOfRatings": 0,
       "medianRating": 0,
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipM1uhFkB9fAeSU23aBrOr-mF-mWry8A6vTIhB0O=w408-h544-k-no"],
@@ -1272,11 +1275,14 @@
     },
     {
       "name": "Adega Do Carregal",
-      "address": "Tv. do Carregal 102, 4050-173 Porto",
+      "address": "Tv. do Carregal 102, 4050-173 Porto",
       "numberOfRatings": 0,
       "medianRating": 0,
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipOAOjBQ6Hr2JdDxZJunaK6NpgKRXdq3X3fyCe0=w408-h544-k-no"],
-      "coordinates": { "latitude": 41.1492239, "longitude": -8.6192932 },
+      "coordinates": {
+        "latitude": 41.1492239,
+        "longitude": -8.6167183
+      },
       "gmaps": "https://maps.app.goo.gl/31UijFFmUz8Z5b9d9",
       "lastCheckIn": 1723374860561,
       "hours": [],
@@ -1287,8 +1293,8 @@
     {
       "name": "Holy Sandwich Shop",
       "coordinates": {
-        "latitude": 41.1423354,
-        "longitude": -8.6183845
+        "latitude": 41.1423484,
+        "longitude": -8.615896
       },
       "address": "R. do Comércio do Porto 130, 4050-209 Porto",
       "hours": [],
@@ -1302,15 +1308,13 @@
     },
     {
       "name": "Musa das Virtudes",
-      "address": "Passeio das Virtudes 28, 4050-629 Porto",
+      "address": "Passeio das Virtudes 28, 4050-629 Porto",
       "numberOfRatings": 0,
       "medianRating": 0,
-      "mediaUrl": [
-        "https://lh5.googleusercontent.com/p/AF1QipM-U-n8dv6qDSzuh-8kqmsbhCY1Vv5NOOwi7C9C=w408-h544-k-no"
-      ],
+      "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipM-U-n8dv6qDSzuh-8kqmsbhCY1Vv5NOOwi7C9C=w408-h544-k-no"],
       "coordinates": {
-        "latitude": 41.1439774,
-        "longitude": -8.620725
+        "latitude": 41.1439556,
+        "longitude": -8.6182513
       },
       "gmaps": "https://maps.app.goo.gl/dHhZPuBJRLSVoRoU8",
       "lastCheckIn": 1723375150480,
@@ -1321,11 +1325,11 @@
     },
     {
       "name": "Fiasco",
-      "address": "Av. de Rodrigues de Freitas 133, 4300-096 Porto",
+      "address": "Av. de Rodrigues de Freitas 133, 4300-096 Porto",
       "numberOfRatings": 0,
       "medianRating": 0,
       "mediaUrl": ["https://lh5.googleusercontent.com/p/AF1QipPEjWHpIQ_BYzd01GWfio1OtJrQQZtEzYSXHyVn=w408-h544-k-no"],
-      "coordinates": { "latitude": 41.1475293, "longitude": -8.5980147 },
+      "coordinates": { "latitude": 41.1458214, "longitude": -8.59839 },
       "gmaps": "https://maps.app.goo.gl/3DhQiWb4SpXELnz3A",
       "lastCheckIn": 1723374050050,
       "hours": [],
